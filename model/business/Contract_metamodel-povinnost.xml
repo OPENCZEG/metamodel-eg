@@ -1,0 +1,9 @@
+<archimate:Contract
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Povinnost"
+    id="metamodel-povinnost"
+    documentation="Povinnost definovaná právním předpisem, je ve skutečnosti základem kontraktu zůčastněných stran, přičemž pro stranu poskytovatele povinnosti je povinnou.">
+  <properties
+      key="Příklad"
+      value="Zpracovat Informační koncepci ČR, Zpracovat informační koncepci, Předložit ICT projekt ke stanovisku OHA, Využívat údaje z PPDF, Vykonávat spisovou službu"/>
+</archimate:Contract>

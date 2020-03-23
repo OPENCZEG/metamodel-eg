@@ -1,0 +1,24 @@
+<archimate:Contract
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Právní předpis"
+    id="metamodel-pravni-predpis"
+    documentation="Jeden právní předpis. Je zároveň stereotypem s danou strukturou autributů">
+  <properties
+      key="URL"
+      value="http://www.zakonyprolidi.cz/cs/2030-333"/>
+  <properties
+      key="Označení"
+      value="333/2030 Sb."/>
+  <properties
+      key="Gestor"
+      value="Ministerstvo agend"/>
+  <properties
+      key="Stereotype"
+      value="Právní předpis"/>
+  <properties
+      key="Příklad"
+      value="Zákon č. 365/2000 Sb., o informačních systémech veřejné správy"/>
+  <properties
+      key="Název"
+      value="Zákon 333/2030 Sb., o zelených žabučkách"/>
+</archimate:Contract>

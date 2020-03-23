@@ -1,0 +1,21 @@
+<archimate:Contract
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Agenda v RPP"
+    id="metamodel-agenda"
+    documentation="Jedna agenda ohlášená v Registru práv a povinností. Je zároveň stereotypem s povinnými atributy, jako je kód agendy a její gestor/ohlašovatel.">
+  <properties
+      key="Označení"
+      value="A1234"/>
+  <properties
+      key="Příklad"
+      value="Evidence obyvatel, cizinecká a ochrana hranic, sociální zabezpečení"/>
+  <properties
+      key="Název agendy"
+      value="Název z RPP"/>
+  <properties
+      key="Stereotype"
+      value="Agenda"/>
+  <properties
+      key="Ohlašovatel"
+      value="Ministerstvo agend"/>
+</archimate:Contract>

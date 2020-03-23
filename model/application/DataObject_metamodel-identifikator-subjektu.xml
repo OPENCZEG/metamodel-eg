@@ -1,0 +1,12 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Identifikátor subjektu"
+    id="metamodel-identifikator-subjektu"
+    documentation="Identifikátor subjektu práva (ve vazbě na jeho identitu)">
+  <properties
+      key="Příklad"
+      value="AIFO v dané agendě"/>
+  <properties
+      key="Stereotype"
+      value="Identifikátor subjektu"/>
+</archimate:DataObject>

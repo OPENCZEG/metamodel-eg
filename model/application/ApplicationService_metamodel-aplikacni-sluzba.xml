@@ -1,0 +1,9 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Aplikační služba (ApplicationService)"
+    id="metamodel-aplikacni-sluzba"
+    documentation="Aplikační služba pro alespoň rámcový rozpis toho, co dělá aplikace či systém.">
+  <properties
+      key="Příklad"
+      value="Evidence faktur, Zaevidování dokumentu, Skartační řízení, Aktualizace údajů, Vygenerování PDF/a, Přijetí a zaevidování žádosti"/>
+</archimate:ApplicationService>

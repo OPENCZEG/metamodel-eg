@@ -1,0 +1,18 @@
+<archimate:BusinessService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Služba veřejné správy"
+    id="metamodel-sluzba-agendy"
+    documentation="Služba veřejné správa, která je ohlášená v RPP v dané agendě">
+  <properties
+      key="Stereotype"
+      value="Služba veřejné správy"/>
+  <properties
+      key="Lze digitálně"
+      value="Ano/ne"/>
+  <properties
+      key="Označení"
+      value="(označení z RPP)"/>
+  <properties
+      key="Příklad"
+      value="každá činnost registrovaná v RPP jako služba v rámci agendy"/>
+</archimate:BusinessService>

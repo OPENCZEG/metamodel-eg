@@ -1,0 +1,9 @@
+<archimate:BusinessRole
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Gestor (role)"
+    id="metamodel-gestor"
+    documentation="Subjekt, který je vůči předpisu či jinému objektu v roli gestora. Vazbu gestora lze zaznamenat přímou vazbou, nebo atributem. Objekt Gestor se využívá jen v popisném modelu. Nejčastěji je gestor zapsán příslušným atributem u objektu.">
+  <properties
+      key="Příklad"
+      value="Ministerstvo vnitra je gestorem Zákona 365/2000 o ISVS"/>
+</archimate:BusinessRole>

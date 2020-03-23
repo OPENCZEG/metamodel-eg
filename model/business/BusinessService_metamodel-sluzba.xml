@@ -1,0 +1,9 @@
+<archimate:BusinessService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Služba"
+    id="metamodel-sluzba"
+    documentation="Služba z byznysového pohledu">
+  <properties
+      key="Příklad"
+      value="Dávky sociální podpory, Vedení matriky, Poskytování údajů ze základních registrů, Výpis bodů řidiče"/>
+</archimate:BusinessService>

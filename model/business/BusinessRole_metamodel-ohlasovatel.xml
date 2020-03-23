@@ -1,0 +1,9 @@
+<archimate:BusinessRole
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Ohlašovatel (role)"
+    id="metamodel-ohlasovatel"
+    documentation="Subjekt který je ohlašovatelem agendy. Vazbu ohlašovatele lze zaznamenat přímou vazbou, objekt Ohlašovatel se využívá zřídka a nebo v obecném referenčním modelu. U agendy je ohlašovatel zapsán příslušným atributem.">
+  <properties
+      key="Příklad"
+      value="Ministerstvo vnitra je ohlašovatelem agendy Evidence obyvatel"/>
+</archimate:BusinessRole>

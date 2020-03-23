@@ -1,0 +1,9 @@
+<archimate:Capability
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Schopnost"
+    id="metamodel-schopnost"
+    documentation="Komplexní schopnost, zejména u schopností úřadu">
+  <properties
+      key="Příklad"
+      value="Spisová služba, Ekonomické řízení, Architektura, Správa majetku, Správa ICT, Tvorba legislativy"/>
+</archimate:Capability>
