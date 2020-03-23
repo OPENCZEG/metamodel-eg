@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Diagram.xsd http://purl.org/dc/elements/1.1/ http://www.opengroup.org/xsd/archimate/3.1/dc.xsd" identifier="id-1e3fa9bc-68df-4ace-9462-d549b2ad0572">
+  <name xml:lang="cs">Vzorový metamodel EG v0.3</name>
+  <documentation xml:lang="cs">Vzorový referenční metamodel pro tvorbu architektury EG speciálně pro OVM a jejich využití</documentation>
+  <metadata>
+    <schema>Dublin Core</schema>
+    <schemaversion>1.1</schemaversion>
+    <dc:type>Model</dc:type>
+  </metadata>
+  <elements>
+    <element identifier="id-metamodel-schopnost" xsi:type="Capability">
+      <name xml:lang="cs">Schopnost</name>
+      <documentation xml:lang="cs">Komplexní schopnost, zejména u schopností úřadu</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Spisová služba, Ekonomické řízení, Architektura, Správa majetku, Správa ICT, Tvorba legislativy</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-organizacni-jednotka" xsi:type="BusinessActor">
+      <name xml:lang="cs">Útvar či organizační jednotka</name>
+      <documentation xml:lang="cs">Uvádí konkrétní útvar v organizaci, či její organizační jednotku. Udává se ro detailnější rozpad struktury dané organizace (zejména u OVM) a pro vazbu konkrétního útvaru na jeho role či na další objekty. V detailnějších modelech úřadů může být zapsán i jako příslušný atribut u daného objektu.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Ekonomický odbor, Odbor hlavního architekta, Krajské pracoviště Kladno, Správní oddělení</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="cs">OU</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-ovm" xsi:type="BusinessActor">
+      <name xml:lang="cs">Orgán veřejné moci</name>
+      <documentation xml:lang="cs">Subjekt jež je orgánem veřejné moci. Definuje se proto, že díky jeho OVMství má nějaké role, povinnosti a práva.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="cs">MA</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Ministerstvo vnitra, Úřad práce, Hlavní město Praha</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">OVM</value>
+        </property>
+        <property propertyDefinitionRef="propid-4">
+          <value xml:lang="cs">12345678</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-vice-ovm" xsi:type="BusinessActor">
+      <name xml:lang="cs">Orgány veřejné moci</name>
+      <documentation xml:lang="cs">Definování skupiny orgánů veřejné moci, má odlišné atributy než je jeden OVM, nicméně platí to samé, něco dělají a mají nějaké role a nějaké povinnosti.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="cs">ÚSÚ</value>
+        </property>
+        <property propertyDefinitionRef="propid-5">
+          <value xml:lang="cs">Název skupiny orgánů vedené v RPP či jiný obecný úplný název</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Skupina OVM</value>
+        </property>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="cs">S1234</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Ministerstva, Kraje, Orgány sociálního zabezpečení, Zdravotní pojišťovny</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-ukon" xsi:type="BusinessEvent">
+      <name xml:lang="cs">Úkon</name>
+      <documentation xml:lang="cs">Úkon, zejména úkon ohlášený v RPP k dané agendě.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="cs">(označení z RPP)</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Podání žádosti, každý úkon ohlášený v agendě</value>
+        </property>
+        <property propertyDefinitionRef="propid-7">
+          <value xml:lang="cs">Ano/ne</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Úkon</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-acinnost" xsi:type="BusinessProcess">
+      <name xml:lang="cs">Agendová činnost</name>
+      <documentation xml:lang="cs">Agendová činnost ohlášená v rámci agendy v RPP. Činnost je vždy soućástí agendy a vždy je někým vykonávána v rámci jeho působnosti.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="cs">C1234</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Agendová činnost</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Zápis údajů do evidence obyvatel</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-proces" xsi:type="BusinessProcess">
+      <name xml:lang="cs">Proces</name>
+      <documentation xml:lang="cs">Proces</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Výběr barvy polstrování židle, Rozhodování o dávce, Přidělení a zapsání rodného čísla, Reklamování údajů v PPDF</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-gestor" xsi:type="BusinessRole">
+      <name xml:lang="cs">Gestor (role)</name>
+      <documentation xml:lang="cs">Subjekt, který je vůči předpisu či jinému objektu v roli gestora. Vazbu gestora lze zaznamenat přímou vazbou, nebo atributem. Objekt Gestor se využívá jen v popisném modelu. Nejčastěji je gestor zapsán příslušným atributem u objektu.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Ministerstvo vnitra je gestorem Zákona 365/2000 o ISVS</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-ohlasovatel" xsi:type="BusinessRole">
+      <name xml:lang="cs">Ohlašovatel (role)</name>
+      <documentation xml:lang="cs">Subjekt který je ohlašovatelem agendy. Vazbu ohlašovatele lze zaznamenat přímou vazbou, objekt Ohlašovatel se využívá zřídka a nebo v obecném referenčním modelu. U agendy je ohlašovatel zapsán příslušným atributem.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Ministerstvo vnitra je ohlašovatelem agendy Evidence obyvatel</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-role" xsi:type="BusinessRole">
+      <name xml:lang="cs">Role</name>
+      <documentation xml:lang="cs">Určitá byznysová role. Jsme vždy schopni k dané roli přiřadit někoho a role vykonává činnosti či pracuje s dalšími objekty. I role je klíčovým elementem v modelu architektury EG.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Zaměstnavatel, Dotčený orgán, Rozhodný orgán, Původce, Subjekt veřejné správy, Zadavatel, Správce evidence</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-sluzba-agendy" xsi:type="BusinessService">
+      <name xml:lang="cs">Služba veřejné správy</name>
+      <documentation xml:lang="cs">Služba veřejné správa, která je ohlášená v RPP v dané agendě</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Služba veřejné správy</value>
+        </property>
+        <property propertyDefinitionRef="propid-7">
+          <value xml:lang="cs">Ano/ne</value>
+        </property>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="cs">(označení z RPP)</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">každá činnost registrovaná v RPP jako služba v rámci agendy</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-sluzba" xsi:type="BusinessService">
+      <name xml:lang="cs">Služba</name>
+      <documentation xml:lang="cs">Služba z byznysového pohledu</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Dávky sociální podpory, Vedení matriky, Poskytování údajů ze základních registrů, Výpis bodů řidiče</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-agenda" xsi:type="Contract">
+      <name xml:lang="cs">Agenda v RPP</name>
+      <documentation xml:lang="cs">Jedna agenda ohlášená v Registru práv a povinností. Je zároveň stereotypem s povinnými atributy, jako je kód agendy a její gestor/ohlašovatel.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="cs">A1234</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Evidence obyvatel, cizinecká a ochrana hranic, sociální zabezpečení</value>
+        </property>
+        <property propertyDefinitionRef="propid-8">
+          <value xml:lang="cs">Název z RPP</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Agenda</value>
+        </property>
+        <property propertyDefinitionRef="propid-9">
+          <value xml:lang="cs">Ministerstvo agend</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-povinnost" xsi:type="Contract">
+      <name xml:lang="cs">Povinnost</name>
+      <documentation xml:lang="cs">Povinnost definovaná právním předpisem, je ve skutečnosti základem kontraktu zůčastněných stran, přičemž pro stranu poskytovatele povinnosti je povinnou.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Zpracovat Informační koncepci ČR, Zpracovat informační koncepci, Předložit ICT projekt ke stanovisku OHA, Využívat údaje z PPDF, Vykonávat spisovou službu</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-pravni-predpis" xsi:type="Contract">
+      <name xml:lang="cs">Právní předpis</name>
+      <documentation xml:lang="cs">Jeden právní předpis. Je zároveň stereotypem s danou strukturou autributů</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-10">
+          <value xml:lang="cs">http://www.zakonyprolidi.cz/cs/2030-333</value>
+        </property>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="cs">333/2030 Sb.</value>
+        </property>
+        <property propertyDefinitionRef="propid-11">
+          <value xml:lang="cs">Ministerstvo agend</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Právní předpis</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Zákon č. 365/2000 Sb., o informačních systémech veřejné správy</value>
+        </property>
+        <property propertyDefinitionRef="propid-5">
+          <value xml:lang="cs">Zákon 333/2030 Sb., o zelených žabučkách</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-pravo" xsi:type="Contract">
+      <name xml:lang="cs">Právo</name>
+      <documentation xml:lang="cs">Právo definované právním předpisem či jiným předpisem. Většinou na druhé straně vztahu zakládá i související povinnost.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Právo na poskytnutí údajů, Právo na nedokládání údajů zapsaných v ZR, Právo podat žádost či učinit podání, Právo požádat o dávku</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-ustanoveni" xsi:type="Contract">
+      <name xml:lang="cs">Ustanovení právního předpisu</name>
+      <documentation xml:lang="cs">Konkrétní ustanovení jednoho právního předpisu. Je zároveň stereotypem s určitými povinnými atributy, jako je odkaz na předpis a odkaz na daný fragment právního předpisu.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-12">
+          <value xml:lang="cs">§ 2, odst. 1</value>
+        </property>
+        <property propertyDefinitionRef="propid-10">
+          <value xml:lang="cs">http://www.zakonyprolidi.cz/cs/2030-333#p2-1</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">§ 5a, Zákona 365/2000 Sb.</value>
+        </property>
+        <property propertyDefinitionRef="propid-13">
+          <value xml:lang="cs">Zákon č. 333/2030 Sb., o zelených žavičkách</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-isvs" xsi:type="ApplicationComponent">
+      <name xml:lang="cs">Informační systém veřejné správy</name>
+      <documentation xml:lang="cs">Jeden logický ISVS jako celek ohlášený do Registru práv a povinností jako ISVS. Je zároveň stereotypem s určitými atributy, jako je kód v EISVS a nebo jeho správce</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-5">
+          <value xml:lang="cs">Úplný oficiální název informačního systému</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">ISEO, ROB, ISZR, všechny ISVS</value>
+        </property>
+        <property propertyDefinitionRef="propid-2">
+          <value xml:lang="cs">ISZŽ</value>
+        </property>
+        <property propertyDefinitionRef="propid-6">
+          <value xml:lang="cs">označení z RPP)</value>
+        </property>
+        <property propertyDefinitionRef="propid-14">
+          <value xml:lang="cs">Ministerstvo agend</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Informační systém</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-aplikacni-rozhrani" xsi:type="ApplicationInterface">
+      <name xml:lang="cs">Rozhraní mezi aplikacemi</name>
+      <documentation xml:lang="cs">Technické rozhraní mezi aplikacemi, či uźivatelské rozhraní. Je důležitým prvkem pro modelování integrací informačních systémů zejména na sdílené služby</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">ISZR, EGSB, Uživatelské rozhraní EKIS, czechpoint at office</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-aplikacni-sluzba" xsi:type="ApplicationService">
+      <name xml:lang="cs">Aplikační služba (ApplicationService)</name>
+      <documentation xml:lang="cs">Aplikační služba pro alespoň rámcový rozpis toho, co dělá aplikace či systém.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Evidence faktur, Zaevidování dokumentu, Skartační řízení, Aktualizace údajů, Vygenerování PDF/a, Přijetí a zaevidování žádosti</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-evidence" xsi:type="DataObject">
+      <name xml:lang="cs">Evidence</name>
+      <documentation xml:lang="cs">Evidence jako souvislá evidence údajů či dokumentů či informací. Je technickým prvkem datové architektury s tím, že se očekává, že evidence je součástí informačního systému, má své zodpovědné subjekty a obsahuje údaje či skupiny údajů a identifikátor(y)</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Evidence</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Evidence psů, Registr rodných čísel v rámci ISEO, Evidence faktur v rámci EKIS</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-identifikator-objektu" xsi:type="DataObject">
+      <name xml:lang="cs">Identifikátor objektu</name>
+      <documentation xml:lang="cs">Identifikátor objektu práva</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Identifikátor objektu</value>
+        </property>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Registrační značka vozidla, číslo průkazu, Číslo oprávnění k odborné činnosti</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-identifikator-subjektu" xsi:type="DataObject">
+      <name xml:lang="cs">Identifikátor subjektu</name>
+      <documentation xml:lang="cs">Identifikátor subjektu práva (ve vazbě na jeho identitu)</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">AIFO v dané agendě</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Identifikátor subjektu</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-identifikator" xsi:type="DataObject">
+      <name xml:lang="cs">Identifikátor</name>
+      <documentation xml:lang="cs">Identifikátor (neurčuje se jeho vlastnost a podoba). Identifikuje údaje či informace vedené formou údajů.</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Číslo jednací dokumentu, Číslo spisu, Číslo pobočky, Kód v evidenci</value>
+        </property>
+        <property propertyDefinitionRef="propid-3">
+          <value xml:lang="cs">Identifikátor</value>
+        </property>
+      </properties>
+    </element>
+    <element identifier="id-metamodel-skupina-udaju" xsi:type="DataObject">
+      <name xml:lang="cs">Skupina údajů</name>
+      <documentation xml:lang="cs">Udává skupinu údajů vztahující se většinou k nějakému subjektu či objektu práva. Údaje jsou evidovány v rámci příslušného informačního systému či evidence, apod. Tento datový objekt je datovou reprezentací jednoho či více byznysových objektů jako fyzických údajů. Mimo jiné má v popisu atributů i identifikátor, kterým lze jednoznačně identifikovat věc ke které se údaje vztahují a jak vznikají a kdo je za ně zodpovědný. V obecných modelech (aź na výjimky) není vhodné rozebírat v modelu jednotlivé údaje, proto se využije daná skupina údajů</documentation>
+      <properties>
+        <property propertyDefinitionRef="propid-1">
+          <value xml:lang="cs">Údaje o fyzické osobě, Údaje o řidičském oprávnění, Údaje o platbách zdravotního pojištění, Údaje o přiznání a výplatě dávky</value>
+        </property>
+      </properties>
+    </element>
+  </elements>
+  <organizations>
+    <item>
+      <label xml:lang="cs">Strategy</label>
+      <item identifierRef="id-metamodel-schopnost" />
+    </item>
+    <item>
+      <label xml:lang="cs">Business</label>
+      <item identifierRef="id-metamodel-organizacni-jednotka" />
+      <item identifierRef="id-metamodel-ovm" />
+      <item identifierRef="id-metamodel-vice-ovm" />
+      <item identifierRef="id-metamodel-ukon" />
+      <item identifierRef="id-metamodel-acinnost" />
+      <item identifierRef="id-metamodel-proces" />
+      <item identifierRef="id-metamodel-gestor" />
+      <item identifierRef="id-metamodel-ohlasovatel" />
+      <item identifierRef="id-metamodel-role" />
+      <item identifierRef="id-metamodel-sluzba-agendy" />
+      <item identifierRef="id-metamodel-sluzba" />
+      <item identifierRef="id-metamodel-agenda" />
+      <item identifierRef="id-metamodel-povinnost" />
+      <item identifierRef="id-metamodel-pravni-predpis" />
+      <item identifierRef="id-metamodel-pravo" />
+      <item identifierRef="id-metamodel-ustanoveni" />
+    </item>
+    <item>
+      <label xml:lang="cs">Application</label>
+      <item identifierRef="id-metamodel-isvs" />
+      <item identifierRef="id-metamodel-aplikacni-rozhrani" />
+      <item identifierRef="id-metamodel-aplikacni-sluzba" />
+      <item identifierRef="id-metamodel-evidence" />
+      <item identifierRef="id-metamodel-identifikator-objektu" />
+      <item identifierRef="id-metamodel-identifikator-subjektu" />
+      <item identifierRef="id-metamodel-identifikator" />
+      <item identifierRef="id-metamodel-skupina-udaju" />
+    </item>
+  </organizations>
+  <propertyDefinitions>
+    <propertyDefinition identifier="propid-11" type="string">
+      <name>Gestor</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-4" type="string">
+      <name>IČ</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-7" type="string">
+      <name>Lze digitálně</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-5" type="string">
+      <name>Název</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-8" type="string">
+      <name>Název agendy</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-9" type="string">
+      <name>Ohlašovatel</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-6" type="string">
+      <name>Označení</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-13" type="string">
+      <name>Předpis</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-1" type="string">
+      <name>Příklad</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-14" type="string">
+      <name>Správce</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-3" type="string">
+      <name>Stereotype</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-10" type="string">
+      <name>URL</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-12" type="string">
+      <name>Ustanovení</name>
+    </propertyDefinition>
+    <propertyDefinition identifier="propid-2" type="string">
+      <name>Zkratka</name>
+    </propertyDefinition>
+  </propertyDefinitions>
+</model>
