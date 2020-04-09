@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Spisová služba, Ekonomické řízení, Architektura, Správa majetku, Správa ICT, Tvorba legislativy"/>
+  <properties
+      key="Vrstva"
+      value="Strategická vrstva"/>
 </archimate:Capability>

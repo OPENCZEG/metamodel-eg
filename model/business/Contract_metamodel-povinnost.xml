@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Zpracovat Informační koncepci ČR, Zpracovat informační koncepci, Předložit ICT projekt ke stanovisku OHA, Využívat údaje z PPDF, Vykonávat spisovou službu"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:Contract>

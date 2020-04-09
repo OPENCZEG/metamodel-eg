@@ -9,4 +9,7 @@
   <properties
       key="Příklad"
       value="Evidence psů, Registr rodných čísel v rámci ISEO, Evidence faktur v rámci EKIS"/>
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
 </archimate:DataObject>

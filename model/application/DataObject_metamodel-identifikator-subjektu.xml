@@ -9,4 +9,7 @@
   <properties
       key="Stereotype"
       value="Identifikátor subjektu"/>
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
 </archimate:DataObject>

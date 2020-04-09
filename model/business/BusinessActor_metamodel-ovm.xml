@@ -15,4 +15,7 @@
   <properties
       key="IČ"
       value="12345678"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:BusinessActor>

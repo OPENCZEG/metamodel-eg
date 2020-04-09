@@ -12,4 +12,7 @@
   <properties
       key="Příklad"
       value="Zápis údajů do evidence obyvatel"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:BusinessProcess>

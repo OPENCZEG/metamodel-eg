@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Dávky sociální podpory, Vedení matriky, Poskytování údajů ze základních registrů, Výpis bodů řidiče"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:BusinessService>

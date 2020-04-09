@@ -15,4 +15,7 @@
   <properties
       key="Předpis"
       value="Zákon č. 333/2030 Sb., o zelených žavičkách"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:Contract>

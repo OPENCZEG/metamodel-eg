@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Ministerstvo vnitra je gestorem Zákona 365/2000 o ISVS"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:BusinessRole>

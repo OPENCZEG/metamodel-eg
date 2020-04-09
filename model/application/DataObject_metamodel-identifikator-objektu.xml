@@ -9,4 +9,7 @@
   <properties
       key="Příklad"
       value="Registrační značka vozidla, číslo průkazu, Číslo oprávnění k odborné činnosti"/>
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
 </archimate:DataObject>

@@ -9,4 +9,7 @@
   <properties
       key="Zkratka"
       value="OU"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:BusinessActor>

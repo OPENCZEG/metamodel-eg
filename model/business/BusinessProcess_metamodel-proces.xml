@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Výběr barvy polstrování židle, Rozhodování o dávce, Přidělení a zapsání rodného čísla, Reklamování údajů v PPDF"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:BusinessProcess>

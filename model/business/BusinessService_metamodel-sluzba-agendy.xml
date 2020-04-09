@@ -15,4 +15,7 @@
   <properties
       key="Příklad"
       value="každá činnost registrovaná v RPP jako služba v rámci agendy"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:BusinessService>

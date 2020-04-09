@@ -21,4 +21,7 @@
   <properties
       key="Název"
       value="Zákon 333/2030 Sb., o zelených žabučkách"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:Contract>

@@ -15,4 +15,7 @@
   <properties
       key="Stereotype"
       value="Úkon"/>
+  <properties
+      key="Vrstva"
+      value="Byznysová vrstva"/>
 </archimate:BusinessEvent>

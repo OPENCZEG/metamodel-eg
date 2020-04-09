@@ -21,4 +21,7 @@
   <properties
       key="Stereotype"
       value="Informační systém"/>
+  <properties
+      key="Vrstva"
+      value="Aplikační vrstva"/>
 </archimate:ApplicationComponent>
