@@ -4,18 +4,15 @@
     id="metamodel-ustanoveni"
     documentation="Konkrétní ustanovení jednoho právního předpisu. Je zároveň stereotypem s určitými povinnými atributy, jako je odkaz na předpis a odkaz na daný fragment právního předpisu.">
   <properties
-      key="Ustanovení"
-      value="§ 2, odst. 1"/>
-  <properties
-      key="URL"
-      value="http://www.zakonyprolidi.cz/cs/2030-333#p2-1"/>
-  <properties
       key="Příklad"
       value="§ 5a, Zákona 365/2000 Sb."/>
+  <properties
+      key="Ustanovení"
+      value="§ 2, odst. 1"/>
   <properties
       key="Předpis"
       value="Zákon č. 333/2030 Sb., o zelených žavičkách"/>
   <properties
-      key="Vrstva"
-      value="Byznysová vrstva"/>
+      key="URL"
+      value="http://www.zakonyprolidi.cz/cs/2030-333#p2-1"/>
 </archimate:Contract>

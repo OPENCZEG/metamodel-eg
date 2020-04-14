@@ -1,0 +1,9 @@
+<archimate:Folder
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Vysvětlení některých znalostí"
+    id="6c51be43-cdb5-4178-9558-9485c7b28031"
+    documentation="V této složce jsou vysvětlující prvky v podobě meaningů objasňujících některé doplňkové znalosti. Tyto prvky nejsou formálně soućástí modelu prvků a při importu v režimu template do jiného modelu nebudou importovány.">
+  <properties
+      key="Vrstva"
+      value="vysvětlení"/>
+</archimate:Folder>

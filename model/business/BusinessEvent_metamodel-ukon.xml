@@ -4,18 +4,15 @@
     id="metamodel-ukon"
     documentation="Úkon, zejména úkon ohlášený v RPP k dané agendě.">
   <properties
-      key="Označení"
-      value="(označení z RPP)"/>
-  <properties
       key="Příklad"
       value="Podání žádosti, každý úkon ohlášený v agendě"/>
   <properties
-      key="Lze digitálně"
-      value="Ano/ne"/>
+      key="Označení"
+      value="(označení z RPP)"/>
   <properties
       key="Stereotype"
       value="Úkon"/>
   <properties
-      key="Vrstva"
-      value="Byznysová vrstva"/>
+      key="Lze digitálně"
+      value="Ano/ne"/>
 </archimate:BusinessEvent>

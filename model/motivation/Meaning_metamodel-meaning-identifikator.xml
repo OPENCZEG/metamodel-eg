@@ -1,0 +1,12 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Identifikátor"
+    id="metamodel-meaning-identifikator"
+    documentation="Fiktivní logický objekt. Identifikátor (neurčuje se jeho vlastnost a podoba). Identifikuje údaje či informace vedené formou údajů. Nezaznamenává se jako samostatný element v architektuře, vždy je atributem objektu který identifikuje. V modelu je uveden pouze pro potřebu zdůraznění významu.">
+  <properties
+      key="Příklad"
+      value="Číslo jednací dokumentu, Číslo spisu, Číslo pobočky, Kód v evidenci"/>
+  <properties
+      key="Vrstva"
+      value="vysvětlení"/>
+</archimate:Meaning>

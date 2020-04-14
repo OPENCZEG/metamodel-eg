@@ -6,7 +6,4 @@
   <properties
       key="Příklad"
       value="Zaměstnavatel, Dotčený orgán, Rozhodný orgán, Původce, Subjekt veřejné správy, Zadavatel, Správce evidence"/>
-  <properties
-      key="Vrstva"
-      value="Byznysová vrstva"/>
 </archimate:BusinessRole>

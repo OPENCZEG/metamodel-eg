@@ -1,4 +1,4 @@
-<archimate:Contract
+<archimate:BusinessObject
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Právo"
     id="metamodel-pravo"
@@ -6,7 +6,4 @@
   <properties
       key="Příklad"
       value="Právo na poskytnutí údajů, Právo na nedokládání údajů zapsaných v ZR, Právo podat žádost či učinit podání, Právo požádat o dávku"/>
-  <properties
-      key="Vrstva"
-      value="Byznysová vrstva"/>
-</archimate:Contract>
+</archimate:BusinessObject>

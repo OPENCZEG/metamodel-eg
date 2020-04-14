@@ -1,0 +1,9 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Implementační vrstva"
+    id="metamodel-meaning-implementacni-vrstva"
+    documentation="Implementační vrstva architektury úřadu">
+  <properties
+      key="Vrstva"
+      value="vysvětlení"/>
+</archimate:Meaning>

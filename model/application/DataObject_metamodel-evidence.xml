@@ -2,14 +2,11 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Evidence"
     id="metamodel-evidence"
-    documentation="Evidence jako souvislá evidence údajů či dokumentů či informací. Je technickým prvkem datové architektury s tím, že se očekává, že evidence je součástí informačního systému, má své zodpovědné subjekty a obsahuje údaje či skupiny údajů a identifikátor(y)">
+    documentation="Evidence jako souvislá evidence údajů či dokumentů či informací. Je technickým prvkem datové architektury s tím, že se očekává, že evidence je součástí informačního systému, má své zodpovědné subjekty a obsahuje údaje či skupiny údajů a identifikátor(y).">
   <properties
       key="Stereotype"
       value="Evidence"/>
   <properties
       key="Příklad"
       value="Evidence psů, Registr rodných čísel v rámci ISEO, Evidence faktur v rámci EKIS"/>
-  <properties
-      key="Vrstva"
-      value="Aplikační vrstva"/>
 </archimate:DataObject>

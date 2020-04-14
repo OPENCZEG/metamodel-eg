@@ -1,0 +1,15 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Provozní aplikace"
+    id="metamodel-provozni-aplikace"
+    documentation="Aplikace či systém, jež jsou ryze provozními. Jedná se třeba o kancelářské aplikace, apod. Do architektury se většinou nezaznamenávají, nicméně je nutné je vést v evidenci aplikací a systémů i z důvodů udržování povědomí o jejich licencování, využívání, aktualizacích, apod. V architektuře se ale vést může a to zejména, pokud nějaký [Informační systém veřejné správy] takové klientské počítačové programy využívá (třeba spisová služba využívající Word, nebo aplikaci pro podepisování).">
+  <properties
+      key="Správce"
+      value="Správce"/>
+  <properties
+      key="Příklad"
+      value="Microsoft Office, LibreOffice, Poznámkový blok, Archi, apod."/>
+  <properties
+      key="Stereotype"
+      value="Provozní systém"/>
+</archimate:ApplicationComponent>

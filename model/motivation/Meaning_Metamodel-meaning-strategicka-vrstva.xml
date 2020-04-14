@@ -1,0 +1,9 @@
+<archimate:Meaning
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Strategická vrstva"
+    id="Metamodel-meaning-strategicka-vrstva"
+    documentation="Strategický rámec určuje strategii úřadu a jeho služeb a jeho činností. Od strategie se vše odvíjí. Strategická vrstva je tedy tou první důležitou pro celý úřad a také pro jeho interakci s ostatními úřady a klienty. Ve strategické vrstvě je nejdůležitějším elementem pro úřad [Schopnost] - tedy je pro chod úřadu a pro jeho postupnou efektivizaci nutné si udělat základní mapu všech společných schopností úřadu.">
+  <properties
+      key="Vrstva"
+      value="vysvětlení"/>
+</archimate:Meaning>

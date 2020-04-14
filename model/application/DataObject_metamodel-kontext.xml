@@ -1,0 +1,18 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Kontext"
+    id="metamodel-kontext"
+    documentation="Kontext jak je definován v rámci agend a sdílení v propojeném datovém fondu. Jedná se o soubor subjektů a objektů práva a u nich vedených a spravovaných údajů a o matici využívání těchto údajů. Zaznamená se na aplikační vrstvě, mělo by být vždy jasné jaké [evidence] se týká, jaký [Informační systém veřejné správy] je dotčen (či dotčeny) a jaké logické skupiny [Skupina údajů] se to týká. U kontextu a evidence a sdílení údajů je nezbytné správně vést a využívat [Identifikátor] a to zejména pro [Identifikátor subjektu] a [Identifikátor objektu]. Kontext se využije pro sdílení údajů mezi jednotlivými agendovými informační systémy.">
+  <properties
+      key="Ohlašovatel"
+      value="Ministerstvo agend"/>
+  <properties
+      key="Příklad"
+      value="Kontext řidiče podle oprávnění k řízení, kontext zdravotního pojištění jako pojištěnce a pojišťovny, apod."/>
+  <properties
+      key="Označení"
+      value="ID označení z katalogu kontextů"/>
+  <properties
+      key="Stereotype"
+      value="Kontext"/>
+</archimate:DataObject>
