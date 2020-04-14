@@ -1,0 +1,9 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Evidence"
+    id="metamodel-evidence-byznysove"
+    documentation="Evidence skutečností či dokumentů či informací na byznysové úrovni. Shromažďují a spravují se v ní skutečnosti důležité pro rozhodování v rámci činností úřadu. Na byznysové úrovni znamená logický prvek, který na aplikační vrstvě reprezentuje kupříkladu [evidence údajů]. Evidence je základem pro znalosti pro výkon byznysových objektů typu [služba veřejné správy], [služba] a [proces]. Evidence má i své důležité [role], jako je editor či subjekt zodpovědný za vedení evidence.">
+  <properties
+      key="Stereotype"
+      value="Evidence"/>
+</archimate:BusinessObject>

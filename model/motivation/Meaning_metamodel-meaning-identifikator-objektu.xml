@@ -4,9 +4,9 @@
     id="metamodel-meaning-identifikator-objektu"
     documentation="Identifikátor objektu práva">
   <properties
-      key="Příklad"
-      value="Registrační značka vozidla, číslo průkazu, Číslo oprávnění k odborné činnosti"/>
-  <properties
       key="Vrstva"
       value="vysvětlení"/>
+  <properties
+      key="Příklad"
+      value="Registrační značka vozidla, číslo průkazu, Číslo oprávnění k odborné činnosti"/>
 </archimate:Meaning>

@@ -4,18 +4,18 @@
     id="metamodel-agenda"
     documentation="Jedna agenda ohlášená v Registru práv a povinností. Je zároveň stereotypem s povinnými atributy, jako je kód agendy a její gestor/ohlašovatel. Zaznamenává se jako element byznys funkce, jelikož zaznamenávat jako kontrakt by bylo nepřehledné.">
   <properties
-      key="Ohlašovatel"
-      value="Ministerstvo agend"/>
+      key="Označení"
+      value="A1234"/>
+  <properties
+      key="Stereotype"
+      value="Agenda"/>
   <properties
       key="Název agendy"
       value="Název z RPP"/>
   <properties
-      key="Označení"
-      value="A1234"/>
+      key="Ohlašovatel"
+      value="Ministerstvo agend"/>
   <properties
       key="Příklad"
       value="Evidence obyvatel, cizinecká a ochrana hranic, sociální zabezpečení"/>
-  <properties
-      key="Stereotype"
-      value="Agenda"/>
 </archimate:BusinessFunction>

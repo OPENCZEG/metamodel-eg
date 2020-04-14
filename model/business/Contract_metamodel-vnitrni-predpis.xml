@@ -4,12 +4,12 @@
     id="metamodel-vnitrni-predpis"
     documentation="ApplicationComponent">
   <properties
+      key="Stereotype"
+      value="Vnitřní předpis"/>
+  <properties
       key="Označení"
       value="Identifikace vnitřního předpisu (třeba ČJ dokumentu nebo číslo interního aktu řízení)"/>
   <properties
       key="Příklad"
       value="Spisový řád, Spisový plán, Organizační řád, Podpisový řád, Nařízení ministra, Závazný pokyn nadřízeného orgánu"/>
-  <properties
-      key="Stereotype"
-      value="Vnitřní předpis"/>
 </archimate:Contract>

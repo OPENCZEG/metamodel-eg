@@ -4,15 +4,15 @@
     id="metamodel-ovm"
     documentation="Subjekt, který je orgánem veřejné moci. Definuje se proto, že díky jeho OVMství má nějaké role, povinnosti a práva.">
   <properties
-      key="Stereotype"
-      value="OVM"/>
-  <properties
       key="Příklad"
       value="Ministerstvo vnitra, Úřad práce, Hlavní město Praha"/>
   <properties
-      key="IČ"
-      value="12345678"/>
-  <properties
       key="Zkratka"
       value="MA"/>
+  <properties
+      key="Stereotype"
+      value="OVM"/>
+  <properties
+      key="IČ"
+      value="12345678"/>
 </archimate:BusinessActor>
