@@ -1,0 +1,12 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Identifikátor"
+    id="metamodel-identifikator"
+    documentation="Identifikátor (neurčuje se jeho vlastnost a podoba). Identifikuje údaje či informace vedené formou údajů.">
+  <properties
+      key="Příklad"
+      value="Číslo jednací dokumentu, Číslo spisu, Číslo pobočky, Kód v evidenci"/>
+  <properties
+      key="Stereotype"
+      value="Identifikátor"/>
+</archimate:DataObject>
