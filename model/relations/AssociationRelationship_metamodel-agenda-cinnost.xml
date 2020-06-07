@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="obsahuje činnost"
+    id="metamodel-agenda-cinnost"
+    documentation="Vazba mezi agendou a její agendovou činností">
+  <source
+      xsi:type="archimate:BusinessFunction"
+      href="BusinessFunction_metamodel-agenda.xml#metamodel-agenda"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_metamodel-acinnost.xml#metamodel-acinnost"/>
+</archimate:AssociationRelationship>

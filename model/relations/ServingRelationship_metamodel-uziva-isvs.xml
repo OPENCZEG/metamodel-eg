@@ -1,0 +1,13 @@
+<archimate:ServingRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="je užíván OVM"
+    id="metamodel-uziva-isvs"
+    documentation="Reprezentuje, že OVM je uživatelem daného informačního systému.">
+  <source
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_metamodel-isvs.xml#metamodel-isvs"/>
+  <target
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_metamodel-ovm.xml#metamodel-ovm"/>
+</archimate:ServingRelationship>

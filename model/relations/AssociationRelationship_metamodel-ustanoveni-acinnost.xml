@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="určuje činnost"
+    id="metamodel-ustanoveni-acinnost"
+    documentation="Vazba mezi ustanovením právního předpisu a z něj plynoucí agendové činnosti. V praxi se příliš nepoužívá, protože to je příliš detailní pohled.">
+  <source
+      xsi:type="archimate:Contract"
+      href="Contract_metamodel-ustanoveni.xml#metamodel-ustanoveni"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_metamodel-acinnost.xml#metamodel-acinnost"/>
+</archimate:AssociationRelationship>

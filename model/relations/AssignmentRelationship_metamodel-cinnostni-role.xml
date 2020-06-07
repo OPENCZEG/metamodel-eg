@@ -1,0 +1,13 @@
+<archimate:AssignmentRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="vykonává činnost"
+    id="metamodel-cinnostni-role"
+    documentation="Daný OVM vykonává činnostní roli. Jde o vazbu OVM na danou činnost.">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_metamodel-ovm.xml#metamodel-ovm"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_metamodel-acinnost.xml#metamodel-acinnost"/>
+</archimate:AssignmentRelationship>
