@@ -1,0 +1,13 @@
+<archimate:CompositionRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="se skládá z objektů"
+    id="metamodel-appdekompozice-modul"
+    documentation="Aplikační dekompozice jde vždy minimálně z úrovně [Informační systém veřejné správy] s dělením na logické či fyzické objekty [Modul informačního systému] a fyzické objekty typu [Komponenta systému]">
+  <source
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_metamodel-isvs.xml#metamodel-isvs"/>
+  <target
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_metamodel-modulis.xml#metamodel-modulis"/>
+</archimate:CompositionRelationship>
