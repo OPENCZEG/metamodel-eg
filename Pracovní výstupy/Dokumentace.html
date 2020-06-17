@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="zpracovává projekt #openczeg, (c) 2020 Open-source Aliance" />
+  <title>Dokumentace k referenčnímu metamodelu EG prvků</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Dokumentace k referenčnímu metamodelu EG prvků</h1>
+<p class="author">zpracovává projekt #openczeg, (c) 2020 Open-source Aliance</p>
+<p class="date">Verze modelu 0.7, verze dokumentace 0.7</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#úvod"><span class="toc-section-number">1</span> Úvod</a><ul>
+<li><a href="#historie-změn"><span class="toc-section-number">1.1</span> Historie změn</a></li>
+<li><a href="#použití-modelu-a-dokumentace"><span class="toc-section-number">1.2</span> Použití modelu a dokumentace</a></li>
+</ul></li>
+<li><a href="#modelování-v-jazyce-archimate"><span class="toc-section-number">2</span> Modelování v jazyce Archimate</a><ul>
+<li><a href="#archimate-v-češtině-pro-nearchitekty"><span class="toc-section-number">2.1</span> Archimate v češtině pro nearchitekty</a></li>
+<li><a href="#popis-jednotlivých-vrstev-architektury-v-kontextu-veřejné-správy"><span class="toc-section-number">2.2</span> Popis jednotlivých vrstev architektury v kontextu veřejné správy</a><ul>
+<li><a href="#strategická-vrstva"><span class="toc-section-number">2.2.1</span> Strategická vrstva</a></li>
+<li><a href="#byznysová-vrstva"><span class="toc-section-number">2.2.2</span> Byznysová vrstva</a></li>
+<li><a href="#aplikační-vrstva"><span class="toc-section-number">2.2.3</span> Aplikační vrstva</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#přehled-klíčových-prvků-a-jak-je-modelovat-v-jazyce-archimate"><span class="toc-section-number">3</span> Přehled klíčových prvků a jak je modelovat v jazyce Archimate</a><ul>
+<li><a href="#modelování-agendového-modelu-a-byznysových-základů"><span class="toc-section-number">3.1</span> Modelování agendového modelu a byznysových základů</a><ul>
+<li><a href="#právní-předpis"><span class="toc-section-number">3.1.1</span> Právní předpis</a></li>
+<li><a href="#ustanovení-právního-předpisu"><span class="toc-section-number">3.1.2</span> Ustanovení právního předpisu</a></li>
+<li><a href="#vnitřní-předpis"><span class="toc-section-number">3.1.3</span> Vnitřní předpis</a></li>
+<li><a href="#povinnost"><span class="toc-section-number">3.1.4</span> Povinnost</a></li>
+<li><a href="#právo"><span class="toc-section-number">3.1.5</span> Právo</a></li>
+<li><a href="#agenda"><span class="toc-section-number">3.1.6</span> Agenda</a></li>
+<li><a href="#agendová-činnost"><span class="toc-section-number">3.1.7</span> Agendová činnost</a></li>
+<li><a href="#služba-veřejné-správy"><span class="toc-section-number">3.1.8</span> Služba veřejné správy</a></li>
+<li><a href="#úkon"><span class="toc-section-number">3.1.9</span> Úkon</a></li>
+</ul></li>
+<li><a href="#modelování-klíčových-subjektů"><span class="toc-section-number">3.2</span> Modelování klíčových subjektů</a><ul>
+<li><a href="#orgán-veřejné-moci"><span class="toc-section-number">3.2.1</span> Orgán veřejné moci</a></li>
+<li><a href="#útvar-či-organizační-jednotka"><span class="toc-section-number">3.2.2</span> Útvar či organizační jednotka</a></li>
+<li><a href="#skupina-orgánů-veřejné-moci"><span class="toc-section-number">3.2.3</span> Skupina orgánů veřejné moci</a></li>
+<li><a href="#subjekt"><span class="toc-section-number">3.2.4</span> Subjekt</a></li>
+<li><a href="#role"><span class="toc-section-number">3.2.5</span> Role</a></li>
+<li><a href="#gestor"><span class="toc-section-number">3.2.6</span> Gestor</a></li>
+<li><a href="#ohlašovatel"><span class="toc-section-number">3.2.7</span> Ohlašovatel</a></li>
+</ul></li>
+<li><a href="#modelování-byznysových-věcí-v-úřadu"><span class="toc-section-number">3.3</span> Modelování byznysových věcí v úřadu</a><ul>
+<li><a href="#schopnost"><span class="toc-section-number">3.3.1</span> Schopnost</a></li>
+<li><a href="#služba"><span class="toc-section-number">3.3.2</span> Služba</a></li>
+<li><a href="#proces"><span class="toc-section-number">3.3.3</span> Proces</a></li>
+<li><a href="#evidence"><span class="toc-section-number">3.3.4</span> Evidence</a></li>
+</ul></li>
+<li><a href="#modelování-aplikační-vrstvy-a-is"><span class="toc-section-number">3.4</span> Modelování aplikační vrstvy a IS</a><ul>
+<li><a href="#informační-systém"><span class="toc-section-number">3.4.1</span> Informační systém</a></li>
+<li><a href="#informační-systém-veřejné-správy"><span class="toc-section-number">3.4.2</span> Informační systém veřejné správy</a></li>
+<li><a href="#komponenta-systému"><span class="toc-section-number">3.4.3</span> Komponenta systému</a></li>
+<li><a href="#modul-informačního-systému"><span class="toc-section-number">3.4.4</span> Modul informačního systému</a></li>
+<li><a href="#provozní-aplikace"><span class="toc-section-number">3.4.5</span> Provozní aplikace</a></li>
+<li><a href="#aplikační-služba"><span class="toc-section-number">3.4.6</span> Aplikační služba</a></li>
+<li><a href="#evidence-údajů"><span class="toc-section-number">3.4.7</span> Evidence údajů</a></li>
+<li><a href="#skupina-údajů"><span class="toc-section-number">3.4.8</span> Skupina údajů</a></li>
+<li><a href="#rozhraní-mezi-aplikacemi"><span class="toc-section-number">3.4.9</span> Rozhraní mezi aplikacemi</a></li>
+<li><a href="#kontext"><span class="toc-section-number">3.4.10</span> Kontext</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#přehled-klíčových-vazeb-a-jak-je-modelovat-v-jazyce-archimate"><span class="toc-section-number">4</span> Přehled klíčových vazeb a jak je modelovat v jazyce Archimate</a><ul>
+<li><a href="#vazby-pro-modelování-byznysu-veřejné-správy"><span class="toc-section-number">4.1</span> Vazby pro modelování byznysu veřejné správy</a></li>
+<li><a href="#vazby-pro-modelování-aplikační-dekompozice-a-vedení-údajů"><span class="toc-section-number">4.2</span> Vazby pro modelování aplikační dekompozice a vedení údajů</a></li>
+</ul></li>
+</ul>
+</nav>
+<hr />
+<details>
+<p><summary>Technické informace o dokumentaci</summary></p>
+<p>URL zdroje dokumentace: <a href="https://github.com/OPENCZEG/metamodel-eg/tree/master/Dokumentace">https://github.com/OPENCZEG/metamodel-eg/tree/master/Dokumentace</a></p>
+<p>URL public verze dokumentace: https://www.openczeg.cz/metamodel-eg</p>
+<p><a href="https://github.com/openczeg/metamodel-eg/issues">Issue list</a></p>
+<p>Správce dokumentace: <a href="https://github.com/michalradacz">Michal Rada</a>, vydává <a href="http://www.openczeg.cz">projekt #openczeg</a>, (C) 2020 <a href="http://www.osaliance.cz">Open-source Aliance</a></p>
+<p>Generováno: GitHub Markdown, generuje aplikace ArchiMrd</p>
+</details>
+<hr />
+<h1 id="úvod"><span class="header-section-number">1</span> Úvod</h1>
+<p>Tento dokument jednak popisuje jak se co modeluje aby to bylo v souladu jak s Národním architektonickým rámcem, tak s referenčním modeleme klíčových prvků EG, tak je zároveň dokumentací tohoto referenčního modelu.</p>
+<h2 id="historie-změn"><span class="header-section-number">1.1</span> Historie změn</h2>
+<p>Níže je tabulka historie změn jak pro model, tak pro tuto dokumentaci. Pro větší přehlednost je ve výchozím stavu tabulka sbalená.</p>
+<details>
+<p><summary>Tabulka historie změn a revizí</summary></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Verze</th>
+<th>Datum</th>
+<th>Popis změn</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.7</td>
+<td>17.6.2020</td>
+<td>První publikovaná verze dokumentace a release modelu. Obsahuje základní elementy a základní vazby. Další verze budou popsány v této tabulce.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="použití-modelu-a-dokumentace"><span class="header-section-number">1.2</span> Použití modelu a dokumentace</h2>
+<p>Tento model a dokumentaci lze vyuźít jako základ pro modelování architektury veřejné správy tak, aby byla v souladu s Národní architekturou ČR a se všemi výchozími modelovacími požadavky. Jedná se o referenční metamodel základních prvků pro architekturu EG.</p>
+<hr />
+<h1 id="modelování-v-jazyce-archimate"><span class="header-section-number">2</span> Modelování v jazyce Archimate</h1>
+<p>Architektura veřejné správy se primárně modeluje v jazyce Archimate. Archimate je modelovací architektonický jazyk s jasnými pravidly, notací a zobrazením.</p>
+<h2 id="archimate-v-češtině-pro-nearchitekty"><span class="header-section-number">2.1</span> Archimate v češtině pro nearchitekty</h2>
+<p>Pro uživatele, kteří nejsou na Archimate zvyklí jsme v rámci jiné aktivity <a href="https://github.com/openczeg/archimate-cz">Archimate česky</a> na miniportálu <a href="https://www.openczeg.cz/otevrene-metodiky">Otevřené metodiky</a> mimo jiné:</p>
+<ul>
+<li><a href="https://openczeg.github.io//otevrene-metodiky/architektura/poznavame-archimate/">Poznáváme jazyk Archimate (česky)</a> je část kde uceleně a jednoduše popisujeme celý koncept jazyka a jeho elementy. Je to primárně psáno a tvořeno pro nearchitekty.</li>
+<li><a href="http://www.openczeg.cz//otevrene-metodiky/architektura/poznavame-archimate/">Český popis a zobrazení elementů jazyka Archimate</a>: Pro nearchitekty kteří musí ale umět číst a rozumnět diagramům zpracovaným v Archimate jsme připravili v češtině popis toho z čeho se jazyk skládá a hlavně ukázkové obrázky kde se kdokoliv může podívat, jak vypadá aktér, služba, schopnost či aplikace.</li>
+</ul>
+<h2 id="popis-jednotlivých-vrstev-architektury-v-kontextu-veřejné-správy"><span class="header-section-number">2.2</span> Popis jednotlivých vrstev architektury v kontextu veřejné správy</h2>
+<h3 id="strategická-vrstva"><span class="header-section-number">2.2.1</span> Strategická vrstva</h3>
+<p>Strategický rámec určuje strategii úřadu a jeho služeb a jeho činností. Od strategie se vše odvíjí. Strategická vrstva je tedy tou první důležitou pro celý úřad a také pro jeho interakci s ostatními úřady a klienty. Ve strategické vrstvě je nejdůležitějším elementem pro úřad <a href="#schopnost">Schopnost</a> - tedy je pro chod úřadu a pro jeho postupnou efektivizaci nutné si udělat základní mapu všech společných schopností úřadu.</p>
+<h3 id="byznysová-vrstva"><span class="header-section-number">2.2.2</span> Byznysová vrstva</h3>
+<p>“Na byznysové vrstvě architektury úřadu jsou zaznamenány všechny klíčové objekty, které se týkají samotné činnosti úřadu. Čili jakákoliv činnost úřadu může být brána jako jeho byznys, přestože se nejedná o klasickou ziskovou firmu. Ať už se jedná o činnosti související s úřední činností v rámci působnosti daného úřadu v agendách, nebo o provozně-režijní činnosti, včetně personální a ekonomické a správní politiky úřadu. Na byznysové vrstvě se znázorňuje vše, co je činnostmi úřadu jako organizace a plyne ze strategie či z předpisů.”Na byznysové vrstvě architektury úřadu jsou zaznamenány všechny klíčové objekty, které se týkají samotné činnosti úřadu. Čili jakákoliv činnost úřadu může být brána jako jeho byznys, přestože se nejedná o klasickou ziskovou firmu. Ať už se jedná o činnosti související s úřední činností v rámci působnosti daného úřadu v agendách, nebo o provozně-režijní činnosti, včetně personální a ekonomické a správní politiky úřadu. Na byznysové vrstvě se znázorňuje vše, co je činnostmi úřadu jako organizace a plyne ze strategie či z předpisů. Samotný legislativní rámec se udává v podobě elementů typu Contract, a to především <a href="#právní-předpis">Právní předpis</a>, <a href="#ustanovení-právního-předpisu">Ustanovení právního předpisu</a>, <a href="#vnitřní-předpis">Vnitřní předpis</a> a z toho plynoucí obecné prvky jako <a href="#povinnost">Povinnost</a> a výkon zajišťující <a href="#právo">Právo</a>. Dále se na byznysové vrstvě musí definovat začlenění úřadu v rámci agendového modelu veřejné správy, a to všechny objekty <a href="#agenda">Agenda</a>, <a href="#agendová-činnost">Agendová činnost</a> atd.</p>
+<p>Po definici těchto prvků je vhodné definovat základní byznysové objekty, jako jsou <a href="#služba">Služba</a>, a to včetně služeb poskytovaných klientům a využívaných odjinud, a <a href="#proces">Proces</a>. Subjekty (včetně sama sebe a ostatních úřadů) definujeme jako aktéry, a to zejména u <a href="#orgán-veřejné-moci">Orgán veřejné moci</a> a <a href="#skupina-orgánů-veřejné-moci">Skupina orgánů veřejné moci</a>, jednotlivé subjekty pak stavíme do jejich aktuální <a href="#role">Role</a> podle toho, co zrovna dělají a jakou mají v dané věci roli. Služby a procesy se neobejdou bez byznysových objektů a je možné definovat i základní byznysové události. Pro detailní popisy procesů slouží procesní modely v jazyce BPMN a architektura je pro detailní rozbor procesů spíše nevhodná, pro rozpad schopností a služeb jsou ale vhodně definované alespoň skupiny procesů nutným základem."</p>
+<h3 id="aplikační-vrstva"><span class="header-section-number">2.2.3</span> Aplikační vrstva</h3>
+<p>"Na aplikační vrstvě architektury úřadu se zaznamenají klíčové elementy, které souvisí s fungováním informačních systémů a aplikací a také s vedením a správou údajů po technické stránce.</p>
+<p>U systémů a aplikací jsou klíčovými objekty <a href="#informační-systém-veřejné-správy">Informační systém veřejné správy</a>, a popřípadě další IS reprezentované jako <a href="#informační-systém">Informační systém</a> a provozní [Aplikace]. U každého systému musí být jasné, zda se jedná o vlastní IS, který je spravován právě tímto úřadem, nebo o cizí IS, který je úřadem využíván. U systémů může být pak i hlubší rozpad na objekty typu <a href="#aplikační-služba">Aplikační služba</a>, a případně i [Aplikační funkce]. Pro uskutečňování integrací a vazeb se definují [Rozhraní aplikace] jako technická rozhraní služeb jednotlivých systémů. Tyto objekty mohou mít pak vazby na infrastrukturní a systémové objekty na technologické vrstvě.</p>
+<p>U správy údajů je nutno si správně definovat údaje z agend zapsaných v RPP, včetně jejich zdrojů. Aby nebylo nutné definovat v EA každý údaj, lze využít objekt <a href="#skupina-údajů">Skupina údajů</a>, který reprezentuje logický celek jednotlivých údajů. Skupiny údajů vedeme většinou v rámci souboru <a href="#kontext">Kontext</a>, jak je definován v rámci agendového modelu a propojeného datového fondu. Údaje jsou vedeny buď v informačních systémech, pro jejich přehlednost lze ale systémy dělit ještě na <a href="#evidence">Evidence</a>, což jsou zákonem či věcnou skupinou definované celky týkající se jednotlivých evidencí údajů a jejich skupin. Jako logický prvek, který se ovšem do architektury nezapracovává jako samostatný objekt, pak slouží [Identifikátor], a to zejména [Identifikátor subjektu] a [Identifikátor objektu], které jsou však na úrovni architektury vždy atributy daného subjektu či projektu a měly by být vedeny i jako atributy u <a href="#evidence">Evidence</a> a <a href="#skupina-údajů">Skupina údajů</a>." ### Technologická vrstva</p>
+<p>Technologická vrstva není sice v architektuře úřadu povinná, přesto se ale doporučuje si na ní rozkreslit alespoň technologické a infrastrukturní prvky a zdroje. Jedná se o vrstvu, kde se reprezentuje technologie, infrastruktura, komunikační sítě a zařízení potřebné pro chod informačních systémů a pro zajištění byznysu (činností) úřadu.</p>
+<p>﻿</p>
+<hr />
+<h1 id="přehled-klíčových-prvků-a-jak-je-modelovat-v-jazyce-archimate"><span class="header-section-number">3</span> Přehled klíčových prvků a jak je modelovat v jazyce Archimate</h1>
+<h2 id="modelování-agendového-modelu-a-byznysových-základů"><span class="header-section-number">3.1</span> Modelování agendového modelu a byznysových základů</h2>
+<h3 id="právní-předpis"><span class="header-section-number">3.1.1</span> Právní předpis</h3>
+<p>Jeden právní předpis. Je zároveň stereotypem s danou strukturou autributů.</p>
+<p>Příklad: Zákon č. 365/2000 Sb., o informačních systémech veřejné správy</p>
+<p>Element typu <strong>Contract</strong> se stereotypem <strong>Právní předpis</strong></p>
+<h3 id="ustanovení-právního-předpisu"><span class="header-section-number">3.1.2</span> Ustanovení právního předpisu</h3>
+<p>Konkrétní ustanovení jednoho právního předpisu. Je zároveň stereotypem s určitými povinnými atributy, jako je odkaz na předpis a odkaz na daný fragment právního předpisu.</p>
+<p>Příklady: § 5a, Zákona 365/2000 Sb.</p>
+<p>Element typu <strong>Contract</strong> se stereotypem <strong>Ustanovení právního předpisu</strong></p>
+<p>Určuje daný právní předpis</p>
+<h3 id="vnitřní-předpis"><span class="header-section-number">3.1.3</span> Vnitřní předpis</h3>
+<p>Vnitřní závazný předpis upravující nějakou oblast. Často se využívá jako element pro úpravu <a href="#schopnost">Schopnost</a> a nebo agendové konání. Je závazným předpisem pro daného vydavatele, či i pro jeho podřízené či řízené organizace.</p>
+<p>Příklady: Spisový řád, Spisový plán, Organizační řád, Podpisový řád, Nařízení ministra</p>
+<p>Element typu <strong>Contract</strong> se stereotypem <strong>Vnitřní předpis</strong></p>
+<p>Určuje vydavatel předpisu</p>
+<h3 id="povinnost"><span class="header-section-number">3.1.4</span> Povinnost</h3>
+<p>Povinnost definovaná právním předpisem, je ve skutečnosti základem kontraktu zúčastněných stran, přičemž pro stranu poskytovatele povinnosti je povinnou.</p>
+<p>Příklady: Zpracovat Informační koncepci ČR, Zpracovat informační koncepci, Předložit ICT projekt ke stanovisku OHA, Využívat údaje z PPDF, Vykonávat spisovou službu</p>
+<p>Element typu <strong>BusinessObject</strong> se stereotypem <strong>Povinnost</strong></p>
+<p>Určuje právní předpis</p>
+<h3 id="právo"><span class="header-section-number">3.1.5</span> Právo</h3>
+<p>Právo definované právním předpisem či jiným předpisem. Většinou na druhé straně vztahu zakládá i související povinnost.</p>
+<p>Příklady: Právo na poskytnutí údajů, Právo na nedokládání údajů zapsaných v ZR, Právo podat žádost či učinit podání, Právo požádat o dávku</p>
+<p>Element typu <strong>BusinessObject</strong> se stereotypem <strong>Právo</strong></p>
+<p>Určuje právní předpis</p>
+<h3 id="agenda"><span class="header-section-number">3.1.6</span> Agenda</h3>
+<p>Jedna agenda ohlášená v Registru práv a povinností. Je zároveň stereotypem s povinnými atributy, jako je kód agendy a její gestor/ohlašovatel. Zaznamenává se jako element byznys funkce, jelikož zaznamenávat jako kontrakt by bylo nepřehledné.</p>
+<p>Příklady: Evidence obyvatel, cizinecká a ochrana hranic, sociální zabezpečení</p>
+<p>Element typu <strong>BusinessFunction</strong> se stereotypem <strong>Agenda</strong></p>
+<p>Určuje ohlášení agendy v RPP</p>
+<h3 id="agendová-činnost"><span class="header-section-number">3.1.7</span> Agendová činnost</h3>
+<p>Agendová činnost ohlášená v rámci agendy v RPP. Činnost je vždy součástí agendy a vždy je někým vykonávána v rámci jeho působnosti.</p>
+<p>Příklad: Zápis údajů do evidence obyvatel</p>
+<p>Element typu <strong>BusinessProcess</strong> se stereotypem <strong>Agendová činnost</strong></p>
+<p>Určuje ohlášení agendy v RPP</p>
+<h3 id="služba-veřejné-správy"><span class="header-section-number">3.1.8</span> Služba veřejné správy</h3>
+<p>Služba veřejné správy, která je ohlášená v RPP v rámci objektu [agenda]. Má svého poskytovatele v rámci agendy. Služba se uvnitř úřadu rozpadá na objekty [proces] pro její výkon a [úkon] pro zaznamenání formálního úkonu v dané agendě. Nezaměňovat za objekt [agendová činnost].</p>
+<p>každá činnost registrovaná v RPP jako služba v rámci agendy</p>
+<p>Element typu <strong>BusinessService</strong> se stereotypem <strong>Služba</strong></p>
+<p>Určuje ohlášení v katalogu služeb v RPP</p>
+<h3 id="úkon"><span class="header-section-number">3.1.9</span> Úkon</h3>
+<p>Úkon, zejména úkon ohlášený v RPP k dané agendě. Je součástí objektu [Služba veřejné správy] a uvnitř úřadu je vázán na [proces]. Může být i [agendová činnost], nicméně z pohledu agendy v RPP se jedná o ohlášený úkon.</p>
+<p>každý úkon ohlášený v RPP u agendy v Katalogu služeb</p>
+<p>Element typu <strong>BusinessFunction</strong> se stereotypem <strong>Úkon</strong></p>
+<p>Určuje ohlášení v katalogu služeb v RPP</p>
+<h2 id="modelování-klíčových-subjektů"><span class="header-section-number">3.2</span> Modelování klíčových subjektů</h2>
+<h3 id="orgán-veřejné-moci"><span class="header-section-number">3.2.1</span> Orgán veřejné moci</h3>
+<p>Subjekt, který je orgánem veřejné moci. Definuje se proto, že díky jeho OVMství má nějaké role, povinnosti a práva.</p>
+<p>Příklady: Ministerstvo vnitra, Úřad práce, Hlavní město Praha</p>
+<p>Element typu <strong>BusinessActor</strong> se stereotypem <strong>OVM</strong></p>
+<p>Určuje ohlášení v katalogu OVM</p>
+<h3 id="útvar-či-organizační-jednotka"><span class="header-section-number">3.2.2</span> Útvar či organizační jednotka</h3>
+<p>Uvádí konkrétní útvar v organizaci, či její organizační jednotku. Udává se pro detailnější rozpad struktury dané organizace (zejména u OVM) a pro vazbu konkrétního útvaru na jeho role či na další objekty. V detailnějších modelech úřadů může být zapsán i jako příslušný atribut u daného objektu.</p>
+<p>Příklady: Ekonomický odbor, Odbor hlavního architekta, Krajské pracoviště Kladno, Správní oddělení</p>
+<p>Element typu <strong>BusinessActor</strong> se stereotypem <strong>Útvar</strong></p>
+<p>Určuje organizační struktura</p>
+<h3 id="skupina-orgánů-veřejné-moci"><span class="header-section-number">3.2.3</span> Skupina orgánů veřejné moci</h3>
+<p>Definování skupiny orgánů veřejné moci, má odlišné atributy, než je jeden OVM, nicméně platí to samé, něco dělají a mají nějaké role a nějaké povinnosti.</p>
+<p>Příklady: Ministerstva, Kraje, Orgány sociálního zabezpečení, Zdravotní pojišťovny</p>
+<p>Element typu <strong>Grouping</strong> se stereotypem <strong>Skupina OVM</strong></p>
+<p>Určuje ohlášení v katalogu OVM v RPP</p>
+<h3 id="subjekt"><span class="header-section-number">3.2.4</span> Subjekt</h3>
+<p>Subjekt práva, typicky subjekt konkrétní fyzické osoby či subjekt konkrétní právnické osoby. Subjekt má typicky danou roli v určitém kontextu</p>
+<p>Příklady: Fyzická osoba, právnická osoba</p>
+<p>Element typu <strong>BusinessActor</strong> se stereotypem</p>
+<h3 id="role"><span class="header-section-number">3.2.5</span> Role</h3>
+<p>Určitá byznysová role. Jsme vždy schopni k dané roli přiřadit někoho a role vykonává činnosti či pracuje s dalšími objekty. I role je klíčovým elementem v modelu architektury EG.</p>
+<p>Příklady: Zaměstnavatel, Dotčený orgán, Rozhodný orgán, Původce, Subjekt veřejné správy, Zadavatel, Správce evidence</p>
+<p>Element typu <strong>BusinessRole</strong> se stereotypem</p>
+<h3 id="gestor"><span class="header-section-number">3.2.6</span> Gestor</h3>
+<p>Subjekt, který je vůči předpisu či jinému objektu v roli gestora. Vazbu gestora lze zaznamenat přímou vazbou, nebo atributem. Objekt Gestor se využívá jen v popisném modelu. Nejčastěji je gestor zapsán příslušným atributem u objektu.</p>
+<p>Element typu <strong>BusinessRole</strong> se stereotypem</p>
+<h3 id="ohlašovatel"><span class="header-section-number">3.2.7</span> Ohlašovatel</h3>
+<p>Virtuální logický objekt role. Subjekt, který je ohlašovatelem agendy. Vazbu ohlašovatele lze zaznamenat přímou vazbou, objekt Ohlašovatel se využívá zřídka, anebo v obecném referenčním modelu. U agendy je ohlašovatel zapsán příslušným atributem.</p>
+<p>Element typu <strong>BusinessRole</strong> se stereotypem</p>
+<p>Určuje ohlášení agendy v RPP</p>
+<h2 id="modelování-byznysových-věcí-v-úřadu"><span class="header-section-number">3.3</span> Modelování byznysových věcí v úřadu</h2>
+<h3 id="schopnost"><span class="header-section-number">3.3.1</span> Schopnost</h3>
+<p>Komplexní schopnost, zejména u schopností úřadu. Znamená společnou schopnost v úřadě, která se vykonává jednotně napříč celým úřadem a má i jednotné metodiky a jednotný rámec, ať už se dotýká jakékoliv agendy (v agendách může být pochopitelně parametricky přizpůsobena). Schopnost lze na byznysové vrstvě nejlépe rozpadnout na elementy typu [Služba] a [Proces], důležité jsou také [Role] zejména uvnitř úřadu. Na aplikační vrstvě se nesmí zapomínat zejména na [Informační systém veřejné správy] a [Informační systém], díky kterým můžeme schopnost realizovat. Schopnost plyne z nějakého byznysového prvku, a tedy zejména z typů [Povinnost].</p>
+<p>Příklady: Spisová služba, Ekonomické řízení, Architektura, Správa majetku, Správa ICT, Tvorba legislativy</p>
+<p>Element typu <strong>Capability</strong> se stereotypem</p>
+<p>Určuje mapa schopností úřadu</p>
+<h3 id="služba"><span class="header-section-number">3.3.2</span> Služba</h3>
+<p>Služba z byznysového pohledu</p>
+<p>Příklady: Dávky sociální podpory, Vedení matriky, Poskytování údajů ze základních registrů, Výpis bodů řidiče</p>
+<p>Element typu <strong>BusinessService</strong> se stereotypem</p>
+<h3 id="proces"><span class="header-section-number">3.3.3</span> Proces</h3>
+<p>Proces</p>
+<p>Příklady: Výběr barvy polstrování židle, Rozhodování o dávce, Přidělení a zapsání rodného čísla, Reklamování údajů v PPDF</p>
+<p>Element typu <strong>BusinessProcess</strong> se stereotypem</p>
+<h3 id="evidence"><span class="header-section-number">3.3.4</span> Evidence</h3>
+<p>Evidence skutečností či dokumentů či informací na byznysové úrovni. Shromažďují a spravují se v ní skutečnosti důležité pro rozhodování v rámci činností úřadu. Na byznysové úrovni znamená logický prvek, který na aplikační vrstvě reprezentuje kupříkladu [evidence údajů]. Evidence je základem pro znalosti pro výkon byznysových objektů typu [služba veřejné správy], [služba] a [proces]. Evidence má i své důležité [role], jako je editor či subjekt zodpovědný za vedení evidence.</p>
+<p>Element typu <strong>BusinessObject</strong> se stereotypem</p>
+<h2 id="modelování-aplikační-vrstvy-a-is"><span class="header-section-number">3.4</span> Modelování aplikační vrstvy a IS</h2>
+<h3 id="informační-systém"><span class="header-section-number">3.4.1</span> Informační systém</h3>
+<p>Informační systém, který není [informační systém veřejné správy]. Pozor, systémy pro správu dokumentů, spisovou službu, ekonomiku a personalistiku vždy vedeme jako ISVS.</p>
+<p>Příklady: Systém monitoringu, auditní systém, apod.</p>
+<p>Element typu <strong>ApplicationComponent</strong> se stereotypem <strong>Informační systém</strong></p>
+<h3 id="informační-systém-veřejné-správy"><span class="header-section-number">3.4.2</span> Informační systém veřejné správy</h3>
+<p>Jeden logický ISVS jako celek ohlášený do Registru práv a povinností jako ISVS. Je zároveň stereotypem s určitými atributy, jako je kód v EISVS, nebo jeho správce.</p>
+<p>Příklady: ISEO, ROB, ISZR, všechny ISVS, všechny ESSL, apod.</p>
+<p>Element typu <strong>ApplicationComponent</strong> se stereotypem <strong>ISVS</strong></p>
+<p>Určuje ohlášení ISVS v RPP</p>
+<h3 id="komponenta-systému"><span class="header-section-number">3.4.3</span> Komponenta systému</h3>
+<p>Fyzická komponenta systému, se kterou se na vývojové větvi pracuje či dá pracovat samostatně. Může se jednat o fyzické komponenty i s různými dodavateli, což je dobrý způsob oddělení komponent v architektuře.</p>
+<p>Element typu <strong>ApplicationComponent</strong> se stereotypem <strong>Komponenta</strong></p>
+<p>Určuje aplikační dekompozice systému</p>
+<h3 id="modul-informačního-systému"><span class="header-section-number">3.4.4</span> Modul informačního systému</h3>
+<p>Modul informačního systému. Jedná se o jeden logický či fyzický modul u modulárního informačního systému, zejména u informačního systému veřejné správy</p>
+<p>Element typu <strong>ApplicationComponent</strong> se stereotypem <strong>Modul</strong></p>
+<p>Určuje aplikační dekompozice systému</p>
+<h3 id="provozní-aplikace"><span class="header-section-number">3.4.5</span> Provozní aplikace</h3>
+<p>Aplikace či systém, které jsou ryze provozními. Jedná se třeba o kancelářské aplikace apod. Do architektury se většinou nezaznamenávají, nicméně je nutné je vést v evidenci aplikací a systémů i z důvodu udržování povědomí o jejich licencování, využívání, aktualizacích apod. V architektuře se ale vést může, a to zejména, pokud nějaký [Informační systém veřejné správy] takové klientské počítačové programy využívá (třeba spisová služba využívající Word, nebo aplikaci pro podepisování).</p>
+<p>Element typu <strong>ApplicationComponent</strong> se stereotypem <strong>Provozní IS</strong></p>
+<h3 id="aplikační-služba"><span class="header-section-number">3.4.6</span> Aplikační služba</h3>
+<p>Aplikační služba pro alespoň rámcový rozpis toho, co dělá aplikace či systém.</p>
+<p>Element typu <strong>ApplicationService</strong> se stereotypem</p>
+<p>Určuje aplikační dekompozice systému</p>
+<h3 id="evidence-údajů"><span class="header-section-number">3.4.7</span> Evidence údajů</h3>
+<p>Technický prvek [Evidence]. Evidence jako souvislá evidence údajů či dokumentů či informací. Je technickým prvkem datové architektury s tím, že se očekává, že evidence je součástí informačního systému, má své zodpovědné subjekty a obsahuje údaje či prvky [skupina údajů] a identifikátor(y). Je to důležité i pro daný [kontext].</p>
+<p>Element typu <strong>DataObject</strong> se stereotypem <strong>Evidence údajů</strong></p>
+<p>Určuje příslušná byznysová evidence</p>
+<h3 id="skupina-údajů"><span class="header-section-number">3.4.8</span> Skupina údajů</h3>
+<p>Udává skupinu údajů vztahující se většinou k nějakému subjektu či objektu práva. Údaje jsou evidovány v rámci příslušného informačního systému či evidence apod. Tento datový objekt je datovou reprezentací jednoho či více byznysových objektů jako fyzických údajů. Mimo jiné má v popisu atributů i identifikátor, kterým lze jednoznačně identifikovat věc, ke které se údaje vztahují a jak vznikají a kdo je za ně zodpovědný. V obecných modelech (až na výjimky) není vhodné rozebírat v modelu jednotlivé údaje, proto se využije daná skupina údajů.</p>
+<p>Element typu <strong>DataObject</strong> se stereotypem <strong>Skupina údajů</strong></p>
+<h3 id="rozhraní-mezi-aplikacemi"><span class="header-section-number">3.4.9</span> Rozhraní mezi aplikacemi</h3>
+<p>Technické rozhraní mezi aplikacemi, či uživatelské rozhraní. Je důležitým prvkem pro modelování integrací informačních systémů zejména na sdílené služby.</p>
+<p>Element typu <strong>ApplicationInterface</strong> se stereotypem</p>
+<p>Určuje dekompozice systémů a integrací</p>
+<h3 id="kontext"><span class="header-section-number">3.4.10</span> Kontext</h3>
+<p>Kontext, jak je definován v rámci agend a sdílení v propojeném datovém fondu. Jedná se o soubor subjektů a objektů práva a u nich vedených a spravovaných údajů a o matici využívání těchto údajů. Zaznamená se na aplikační vrstvě, mělo by být vždy jasné, jaké [evidence] se týká, jaký [Informační systém veřejné správy] je dotčen (či dotčeny) a jaké logické skupiny [Skupina údajů] se to týká. U kontextu a evidence a sdílení údajů je nezbytné správně vést a využívat [Identifikátor], a to zejména pro [Identifikátor subjektu] a [Identifikátor objektu]. Kontext se využije pro sdílení údajů mezi jednotlivými agendovými informační systémy.</p>
+<p>Element typu <strong>DataObject</strong> se stereotypem <strong>Kontext</strong></p>
+<p>Určuje ohlášení kontextu</p>
+<hr />
+<h1 id="přehled-klíčových-vazeb-a-jak-je-modelovat-v-jazyce-archimate"><span class="header-section-number">4</span> Přehled klíčových vazeb a jak je modelovat v jazyce Archimate</h1>
+<h2 id="vazby-pro-modelování-byznysu-veřejné-správy"><span class="header-section-number">4.1</span> Vazby pro modelování byznysu veřejné správy</h2>
+<p><strong><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> je gestorem za <a href="#právní-předpis">Právní předpis</a></strong></p>
+<p>Reprezentuje, že nějaké OVM je gestorem za daný právní předpis.</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> VYDÁVÁ <a href="#právní-předpis">Právní předpis</a></strong></p>
+<p>Reprezentuje vztah, kdy určitý OVM vydává právní předpis. Je zároveň i jeho gestorem.</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#právní-předpis">Právní předpis</a> obsahuje ustanovení <a href="#ustanovení-právního-předpisu">Ustanovení právního předpisu</a></strong></p>
+<p>Vazba mezi právním předpisem a jeho logickou jednotkou ustanovením.</p>
+<p>Vazba typu <strong>CompositionRelationship</strong></p>
+<p><strong><a href="#právní-předpis">Právní předpis</a> definuje povinnost <a href="#povinnost">Povinnost</a></strong></p>
+<p>Vazba pro definici povinnosti. Právní předpis určuje (definuje) nějakou povinnost</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#právní-předpis">Právní předpis</a> definuje právo <a href="#právo">Právo</a></strong></p>
+<p>Vazba pro definici práva. Právní předpis dává (definuje) nějaké právo</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#právní-předpis">Právní předpis</a> definuje agendu <a href="#agenda">Agenda</a></strong></p>
+<p>Vazba původu agendy, kdy agendu definuje daný právní předpis.</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> ohlašuje <a href="#agenda">Agenda</a></strong></p>
+<p><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> v roli <a href="#ohlašovatel">Ohlašovatel</a> ohlašuje agendu do RPP</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#ohlašovatel">Ohlašovatel</a> ohlašuje <a href="#agenda">Agenda</a></strong></p>
+<p><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> v roli <a href="#ohlašovatel">Ohlašovatel</a> ohlašuje agendu do RPP</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> vykonává působnost v agendě <a href="#agenda">Agenda</a></strong></p>
+<p>Daný OVM má působnost v dané agendě. Jedná se o výkon působnosti, tedy jde o vazbu mezi OVM a agendou.</p>
+<p>Vazba typu <strong>AssignmentRelationship</strong></p>
+<p><strong><a href="#agenda">Agenda</a> obsahuje činnost <a href="#agendová-činnost">Agendová činnost</a></strong></p>
+<p>Vazba mezi agendou a její agendovou činností</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#ustanovení-právního-předpisu">Ustanovení právního předpisu</a> určuje činnost <a href="#agendová-činnost">Agendová činnost</a></strong></p>
+<p>Vazba mezi ustanovením právního předpisu a z něj plynoucí agendové činnosti. V praxi se příliš nepoužívá, protože to je příliš detailní pohled.</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> vykonává činnost <a href="#agendová-činnost">Agendová činnost</a></strong></p>
+<p>Daný OVM vykonává činnostní roli. Jde o vazbu OVM na danou činnost.</p>
+<p>Vazba typu <strong>AssignmentRelationship</strong></p>
+<p><strong><a href="#agenda">Agenda</a> určuje službu <a href="#služba-veřejné-správy">Služba veřejné správy</a></strong></p>
+<p>Reprezentuje, že daná agenda určuje digitální službu či obecnou službu veřejné správy.</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#agenda">Agenda</a> určuje úkon <a href="#úkon">Úkon</a></strong></p>
+<p>Reprezentuje, že daná agenda určuje digitální nebo obecný úkon. Úkon je součástí agendy.</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> VYDÁVÁ <a href="#vnitřní-předpis">Vnitřní předpis</a></strong></p>
+<p>Reprezentuje, že někdo vydává svůj závazný vnitřní předpis.</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#subjekt">Subjekt</a> má povinnost <a href="#povinnost">Povinnost</a></strong></p>
+<p>Subjekt má obecně definovanou povinnost</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#subjekt">Subjekt</a> má právo <a href="#právo">Právo</a></strong></p>
+<p>Subjekt má obecně definované právo</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#subjekt">Subjekt</a> může být v roli <a href="#role">Role</a></strong></p>
+<p>Vazba pro přiřazení obecného subjektu (nebo jiného aktéra) do konkrétní role.</p>
+<p>Vazba typu <strong>AssignmentRelationship</strong></p>
+<p><strong><a href="#role">Role</a> má povinnost <a href="#povinnost">Povinnost</a></strong></p>
+<p>Subjekt v dané roli má určitou povinnost, plynoucí mu právě z jeho role</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<p><strong><a href="#role">Role</a> má právo <a href="#právo">Právo</a></strong></p>
+<p>Subjekt v dané roli má určité právo, které má právě díky své roli</p>
+<p>Vazba typu <strong>AssociationRelationship</strong></p>
+<h2 id="vazby-pro-modelování-aplikační-dekompozice-a-vedení-údajů"><span class="header-section-number">4.2</span> Vazby pro modelování aplikační dekompozice a vedení údajů</h2>
+<p><strong><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> je správcem systému <a href="#informační-systém-veřejné-správy">Informační systém veřejné správy</a></strong></p>
+<p>Reprezentuje, že nějaké OVM je správcem daného informačního systému.</p>
+<p>Vazba typu <strong>ServingRelationship</strong></p>
+<p><strong><a href="#informační-systém-veřejné-správy">Informační systém veřejné správy</a> je užíván OVM <a href="#orgán-veřejné-moci">Orgán veřejné moci</a></strong></p>
+<p>Reprezentuje, že OVM je uživatelem daného informačního systému.</p>
+<p>Vazba typu <strong>ServingRelationship</strong></p>
+<p><strong><a href="#informační-systém-veřejné-správy">Informační systém veřejné správy</a> se skládá z objektů <a href="#modul-informačního-systému">Modul informačního systému</a></strong></p>
+<p>Aplikační dekompozice jde vždy minimálně z úrovně <a href="#informační-systém-veřejné-správy">Informační systém veřejné správy</a> s dělením na logické či fyzické objekty <a href="#modul-informačního-systému">Modul informačního systému</a> a fyzické objekty typu <a href="#komponenta-systému">Komponenta systému</a></p>
+<p>Vazba typu <strong>CompositionRelationship</strong></p>
+<p><strong><a href="#informační-systém-veřejné-správy">Informační systém veřejné správy</a> řeší datovou evidenci <a href="#evidence-údajů">Evidence údajů</a></strong></p>
+<p>Informační systém řeší evidenci údajů a spravují se v něm údaje</p>
+<p>Vazba typu <strong>AccessRelationship</strong></p>
+<p><strong><a href="#evidence-údajů">Evidence údajů</a> je reprezentací pro objekt <a href="#evidence">Evidence</a></strong></p>
+<p>Vazba mezi logickou (byznysovou) evidencí jako byznysovým objektem a evidencí v příslušném informačním systému jako technickou evidencí ve formě datového objektu</p>
+<p>Vazba typu <strong>RealizationRelationship</strong></p>
+<p><strong><a href="#informační-systém-veřejné-správy">Informační systém veřejné správy</a> eviduje údaje <a href="#skupina-údajů">Skupina údajů</a></strong></p>
+<p>Vazba typu <strong>AccessRelationship</strong></p>
+<p><strong><a href="#orgán-veřejné-moci">Orgán veřejné moci</a> má provozní systém <a href="#informační-systém">Informační systém</a></strong></p>
+<p>Reprezentuje, že nějaké OVM spravuje a provozuje a užívá provozní informační systém</p>
+<p>Vazba typu <strong>ServingRelationship</strong></p>
+<p></p>
+</body>
+</html>
