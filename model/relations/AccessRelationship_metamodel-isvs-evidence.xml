@@ -2,7 +2,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="řeší datovou evidenci"
-    id="metamodel-isvs-evidence">
+    id="metamodel-isvs-evidence"
+    documentation="Informační systém řeší evidenci údajů a spravují se v něm údaje">
   <source
       xsi:type="archimate:ApplicationComponent"
       href="ApplicationComponent_metamodel-isvs.xml#metamodel-isvs"/>
