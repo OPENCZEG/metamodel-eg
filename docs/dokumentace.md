@@ -1,6 +1,6 @@
 % Dokumentace k referenčnímu metamodelu EG prvků
 % zpracovává projekt #openczeg, (c) 2020 Open-source Aliance
-% Verze modelu 0.7, verze dokumentace 0.7
+% Verze modelu 0.7.1, verze dokumentace 0.7.1
 
 ----------
 
@@ -34,6 +34,7 @@ Níže je tabulka historie změn jak pro model, tak pro tuto dokumentaci. Pro v�
 | Verze | Datum | Popis změn |
 |-----|-----|-----|
 | 0.7 | 17.6.2020 | První publikovaná verze dokumentace a release modelu. Obsahuje základní elementy a základní vazby. Další verze budou popsány v této tabulce. |
+| 0.7.1 | 14.12.2020 | Opraven element Úkon a do elementů jež mají svoje určení bylo jako atribut Určuje toto doplněno. |
 
 </details>
 
