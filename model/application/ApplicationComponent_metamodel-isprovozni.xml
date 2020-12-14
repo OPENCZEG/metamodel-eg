@@ -5,7 +5,7 @@
     documentation="Informační systém, který není [informační systém veřejné správy]. Pozor, systémy pro správu dokumentů, spisovou službu, ekonomiku a personalistiku vždy vedeme jako ISVS.">
   <properties
       key="Stereotype"
-      value="Provozní systém"/>
+      value="Informační systém"/>
   <properties
       key="Příklad"
       value="Systém monitogingu, auditní systém, apod."/>

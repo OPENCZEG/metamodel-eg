@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="ISZR, EGSB, Uživatelské rozhraní EKIS, czechpoint at office"/>
+  <properties
+      key="Určuje"
+      value="dekompozice systémů a integrací"/>
 </archimate:ApplicationInterface>

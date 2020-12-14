@@ -9,4 +9,7 @@
   <properties
       key="Stereotype"
       value="Evidence údajů"/>
+  <properties
+      key="Určuje"
+      value="příslušná byznysová evidence"/>
 </archimate:DataObject>
