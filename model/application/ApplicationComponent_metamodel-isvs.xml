@@ -11,7 +11,7 @@
       value="označení z RPP), tedy identifikátor z evidence ISVS"/>
   <properties
       key="Stereotype"
-      value="Informační systém"/>
+      value="ISVS"/>
   <properties
       key="Příklad"
       value="ISEO, ROB, ISZR, všechny ISVS"/>
@@ -21,4 +21,7 @@
   <properties
       key="Název"
       value="Úplný oficiální název informačního systému"/>
+  <properties
+      key="Určuje"
+      value="ohlášení ISVS v RPP"/>
 </archimate:ApplicationComponent>

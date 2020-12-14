@@ -2,4 +2,11 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Modul informačního systému"
     id="metamodel-modulis"
-    documentation="Modul informačního systému. Jedná se o jeden logický či fyzický modul u modulárního informačního systému, zejména u informačního systému veřejné správy"/>
+    documentation="Modul informačního systému. Jedná se o jeden logický či fyzický modul u modulárního informačního systému, zejména u informačního systému veřejné správy">
+  <properties
+      key="Určuje"
+      value="aplikační dekompozice systému"/>
+  <properties
+      key="Stereotype"
+      value="Modul"/>
+</archimate:ApplicationComponent>

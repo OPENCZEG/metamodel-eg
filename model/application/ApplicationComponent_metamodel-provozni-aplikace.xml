@@ -5,7 +5,7 @@
     documentation="Aplikace či systém, které jsou ryze provozními. Jedná se třeba o kancelářské aplikace apod. Do architektury se většinou nezaznamenávají, nicméně je nutné je vést v evidenci aplikací a systémů i z důvodu udržování povědomí o jejich licencování, využívání, aktualizacích apod. V architektuře se ale vést může, a to zejména, pokud nějaký [Informační systém veřejné správy] takové klientské počítačové programy využívá (třeba spisová služba využívající Word, nebo aplikaci pro podepisování).">
   <properties
       key="Stereotype"
-      value="Provozní systém"/>
+      value="Provozní IS"/>
   <properties
       key="Správce"
       value="Správce"/>

@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Údaje o fyzické osobě, Údaje o řidičském oprávnění, Údaje o platbách zdravotního pojištění, Údaje o přiznání a výplatě dávky"/>
+  <properties
+      key="Stereotype"
+      value="Skupina údajů"/>
 </archimate:DataObject>

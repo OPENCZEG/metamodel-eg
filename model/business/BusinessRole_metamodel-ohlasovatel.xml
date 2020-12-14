@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Ministerstvo vnitra je ohlašovatelem agendy Evidence obyvatel"/>
+  <properties
+      key="Určuje"
+      value="ohlášení agendy v RPP"/>
 </archimate:BusinessRole>

@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Evidence faktur, Zaevidování dokumentu, Skartační řízení, Aktualizace údajů, Vygenerování PDF/a, Přijetí a zaevidování žádosti"/>
+  <properties
+      key="Určuje"
+      value="aplikační dekompozice systému"/>
 </archimate:ApplicationService>

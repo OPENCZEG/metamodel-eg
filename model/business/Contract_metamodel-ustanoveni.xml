@@ -15,4 +15,10 @@
   <properties
       key="URL"
       value="http://www.zakonyprolidi.cz/cs/2030-333#p2-1"/>
+  <properties
+      key="Určuje"
+      value="daný právní předpis"/>
+  <properties
+      key="Stereotype"
+      value="Ustanovení právního předpisu"/>
 </archimate:Contract>

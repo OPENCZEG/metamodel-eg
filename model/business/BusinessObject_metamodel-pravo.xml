@@ -6,4 +6,7 @@
   <properties
       key="Příklad"
       value="Právo na poskytnutí údajů, Právo na nedokládání údajů zapsaných v ZR, Právo podat žádost či učinit podání, Právo požádat o dávku"/>
+  <properties
+      key="Určuje"
+      value="právní předpis"/>
 </archimate:BusinessObject>
