@@ -15,7 +15,4 @@
   <properties
       key="IČ"
       value="12345678"/>
-  <properties
-      key="Určuje"
-      value="ohlášení v katalogu OVM"/>
 </archimate:BusinessActor>

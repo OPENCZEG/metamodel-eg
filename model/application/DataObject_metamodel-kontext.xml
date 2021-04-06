@@ -15,7 +15,4 @@
   <properties
       key="Stereotype"
       value="Kontext"/>
-  <properties
-      key="Určuje"
-      value="ohlášení kontextu"/>
 </archimate:DataObject>

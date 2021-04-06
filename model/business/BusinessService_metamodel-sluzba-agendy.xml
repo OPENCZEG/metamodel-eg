@@ -14,8 +14,5 @@
       value="každá činnost registrovaná v RPP jako služba v rámci agendy"/>
   <properties
       key="Stereotype"
-      value="Služba"/>
-  <properties
-      key="Určuje"
-      value="ohlášení v katalogu služeb v RPP"/>
+      value="Služba veřejné správy"/>
 </archimate:BusinessService>

@@ -12,7 +12,4 @@
   <properties
       key="Stereotype"
       value="Agendová činnost"/>
-  <properties
-      key="Určuje"
-      value="ohlášení agendy v RPP"/>
 </archimate:BusinessProcess>

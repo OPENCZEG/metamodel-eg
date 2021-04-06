@@ -6,10 +6,4 @@
   <properties
       key="Příklad"
       value="Zpracovat Informační koncepci ČR, Zpracovat informační koncepci, Předložit ICT projekt ke stanovisku OHA, Využívat údaje z PPDF, Vykonávat spisovou službu"/>
-  <properties
-      key="Určuje"
-      value="právní předpis"/>
-  <properties
-      key="Stereotype"
-      value="Povinnost"/>
 </archimate:BusinessObject>

@@ -18,7 +18,4 @@
   <properties
       key="Příklad"
       value="Evidence obyvatel, cizinecká a ochrana hranic, sociální zabezpečení"/>
-  <properties
-      key="Určuje"
-      value="ohlášení agendy v RPP"/>
 </archimate:BusinessFunction>

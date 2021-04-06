@@ -9,7 +9,4 @@
   <properties
       key="Příklad"
       value="Ekonomický odbor, Odbor hlavního architekta, Krajské pracoviště Kladno, Správní oddělení"/>
-  <properties
-      key="Určuje"
-      value="organizační struktura"/>
 </archimate:BusinessActor>
