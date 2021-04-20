@@ -1,0 +1,5 @@
+<archimate:Requirement
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Požadavek"
+    id="metamodel-pozadavek"
+    documentation="Požadavek se zakresluje na motivační vrstvě a ve veřejné správě má více významů. Je to něco co někdo požaduje a někdo to má zajistit. Může se jednat o vnitřní požadavek, ale také o požadavek v souvislosti s veřejnými zakázkami."/>

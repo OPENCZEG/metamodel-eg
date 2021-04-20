@@ -1,0 +1,5 @@
+<archimate:Principle
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Architektonický princip"
+    id="metamodel-archprincip"
+    documentation="Na motivační úrovni se modelují i jednotlivé principy podle kterých daný úřad funguje, v první řadě jde o architektonické principy jež se dodržují při formulaci a realizaci architektury. Některé architektonické principy jsou závazně definovány v Informační koncepci ČR."/>

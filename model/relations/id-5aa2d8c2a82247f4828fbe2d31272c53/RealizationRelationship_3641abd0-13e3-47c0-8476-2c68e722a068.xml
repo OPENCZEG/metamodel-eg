@@ -1,0 +1,13 @@
+<archimate:RealizationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="je realizací cíle"
+    id="3641abd0-13e3-47c0-8476-2c68e722a068"
+    documentation="Definovaný cíl by se měl na motivační architektuře promítnout příslušnými realizacemi.">
+  <source
+      xsi:type="archimate:Requirement"
+      href="Requirement_metamodel-archpozadavek.xml#metamodel-archpozadavek"/>
+  <target
+      xsi:type="archimate:Goal"
+      href="Goal_metamodel-cil.xml#metamodel-cil"/>
+</archimate:RealizationRelationship>
