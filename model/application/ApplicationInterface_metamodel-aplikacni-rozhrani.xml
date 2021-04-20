@@ -1,9 +1,0 @@
-<archimate:ApplicationInterface
-    xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Rozhraní mezi aplikacemi"
-    id="metamodel-aplikacni-rozhrani"
-    documentation="Technické rozhraní mezi aplikacemi, či uživatelské rozhraní. Je důležitým prvkem pro modelování integrací informačních systémů zejména na sdílené služby.">
-  <properties
-      key="Příklad"
-      value="ISZR, EGSB, Uživatelské rozhraní EKIS, czechpoint at office"/>
-</archimate:ApplicationInterface>
