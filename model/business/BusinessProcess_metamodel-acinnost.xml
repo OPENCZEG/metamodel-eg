@@ -1,0 +1,15 @@
+<archimate:BusinessProcess
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Agendová činnost"
+    id="metamodel-acinnost"
+    documentation="Agendová činnost ohlášená v rámci agendy v RPP. Činnost je vždy součástí agendy a vždy je někým vykonávána v rámci jeho působnosti.">
+  <properties
+      key="Příklad"
+      value="Zápis údajů do evidence obyvatel"/>
+  <properties
+      key="Označení"
+      value="C1234"/>
+  <properties
+      key="Stereotype"
+      value="Agendová činnost"/>
+</archimate:BusinessProcess>

@@ -1,0 +1,24 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Informační systém veřejné správy"
+    id="metamodel-isvs"
+    documentation="Jeden logický ISVS jako celek ohlášený do Registru práv a povinností jako ISVS. Je zároveň stereotypem s určitými atributy, jako je kód v EISVS, nebo jeho správce.">
+  <properties
+      key="Zkratka"
+      value="ISZŽ"/>
+  <properties
+      key="Označení"
+      value="označení z RPP), tedy identifikátor z evidence ISVS"/>
+  <properties
+      key="Stereotype"
+      value="Informační systém"/>
+  <properties
+      key="Příklad"
+      value="ISEO, ROB, ISZR, všechny ISVS"/>
+  <properties
+      key="Správce"
+      value="Ministerstvo agend"/>
+  <properties
+      key="Název"
+      value="Úplný oficiální název informačního systému"/>
+</archimate:ApplicationComponent>

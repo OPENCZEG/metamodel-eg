@@ -1,0 +1,18 @@
+<archimate:BusinessService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Úkon"
+    id="metamodel-ukon"
+    documentation="Úkon, zejména úkon ohlášený v RPP k dané agendě. Je součástí objektu [Služba veřejné správy] a uvnitř úřadu je vázán na [proces]. Může být i [agendová činnost], nicméně z pohledu agendy v RPP se jedná o ohlášený úkon.">
+  <properties
+      key="Stereotype"
+      value="Úkon"/>
+  <properties
+      key="Označení"
+      value="(označení z RPP)"/>
+  <properties
+      key="Příklad"
+      value="Podání žádosti, každý úkon ohlášený v agendě"/>
+  <properties
+      key="Lze digitálně"
+      value="Ano/ne"/>
+</archimate:BusinessService>
