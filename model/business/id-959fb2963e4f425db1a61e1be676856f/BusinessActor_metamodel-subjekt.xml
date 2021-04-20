@@ -1,0 +1,5 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Subjekt"
+    id="metamodel-subjekt"
+    documentation="Subjekt práva, typicky subjekt konkrétní fyzické osoby či subjekt konkrétní právnické osoby. Subjekt má typicky danou roli v určitém kontextu"/>

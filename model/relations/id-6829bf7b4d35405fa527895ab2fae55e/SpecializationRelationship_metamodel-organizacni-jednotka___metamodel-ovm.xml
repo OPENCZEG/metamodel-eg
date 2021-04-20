@@ -1,0 +1,13 @@
+<archimate:SpecializationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="jedná za"
+    id="metamodel-organizacni-jednotka___metamodel-ovm"
+    documentation="Útvar ve své činnosti zastupuje vždy celý úřad. Z tohoto důvodu je přípustné zakreslit jako specializaci, kdy je zřejmé, že když v dané oblasti něco činí či se nějak chová útvar, je to jménem celého úřadu.">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_metamodel-organizacni-jednotka.xml#metamodel-organizacni-jednotka"/>
+  <target
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_metamodel-ovm.xml#metamodel-ovm"/>
+</archimate:SpecializationRelationship>

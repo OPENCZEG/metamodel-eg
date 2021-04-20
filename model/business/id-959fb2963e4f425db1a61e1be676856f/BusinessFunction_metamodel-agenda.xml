@@ -1,0 +1,12 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Agenda"
+    id="metamodel-agenda"
+    documentation="Jedna agenda ohlášená v Registru práv a povinností. Je zároveň stereotypem s povinnými atributy, jako je kód agendy a její gestor/ohlašovatel. Zaznamenává se jako element byznys funkce, jelikož zaznamenávat jako kontrakt by bylo nepřehledné.">
+  <properties
+      key="Určuje"
+      value="ohlášení agendy v RPP"/>
+  <properties
+      key="Stereotype"
+      value="Agenda"/>
+</archimate:BusinessFunction>

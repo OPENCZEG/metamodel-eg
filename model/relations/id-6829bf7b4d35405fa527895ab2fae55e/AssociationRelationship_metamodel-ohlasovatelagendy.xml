@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="ohlašuje"
+    id="metamodel-ohlasovatelagendy"
+    documentation="[Orgán veřejné moci] v roli [Ohlašovatel] ohlašuje agendu do RPP">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_metamodel-ovm.xml#metamodel-ovm"/>
+  <target
+      xsi:type="archimate:BusinessFunction"
+      href="BusinessFunction_metamodel-agenda.xml#metamodel-agenda"/>
+</archimate:AssociationRelationship>

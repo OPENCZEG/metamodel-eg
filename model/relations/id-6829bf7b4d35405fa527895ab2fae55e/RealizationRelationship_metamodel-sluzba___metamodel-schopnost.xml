@@ -1,0 +1,13 @@
+<archimate:RealizationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="se realizuje v rámci schopnosti"
+    id="metamodel-sluzba___metamodel-schopnost"
+    documentation="Schopnost je také souborem byznysových služeb a proto se i služba může přiřadit a realizovat v rámci určité schopnosti. To se hodí při detailní vazbě služeb na strategickou architekturu.">
+  <source
+      xsi:type="archimate:BusinessService"
+      href="BusinessService_metamodel-sluzba.xml#metamodel-sluzba"/>
+  <target
+      xsi:type="archimate:Capability"
+      href="Capability_metamodel-schopnost.xml#metamodel-schopnost"/>
+</archimate:RealizationRelationship>

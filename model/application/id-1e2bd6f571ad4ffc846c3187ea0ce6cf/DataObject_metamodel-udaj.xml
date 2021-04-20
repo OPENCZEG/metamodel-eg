@@ -1,0 +1,9 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Údaj"
+    id="metamodel-udaj"
+    documentation="Evidovaný a spravovaný údaj, jež je obvykle součástí [Evidence údajů] v rámci informačního systému. Údaj se týká vždy alespoň jednoho subjektu či objektu a je s ním svázán tak, aby bylo jasné, kterých subjektů a objektů se týká a ke kterým se váže. Každý údaj musí být zanesen v konceptuální datové architektuře OVM a jde-li o údaj v AIS tak musí být řádně ohlášen v RPP. U údaje musí být jasná jeho technická struktura, zdroj, vznik a aktualizace, zodpovědný editor a musí být nastaveny i mechanismy jeho aktualizace a reklamace a sdílení v rámci propojeného datového fondu.">
+  <properties
+      key="Stereotype"
+      value="Údaj"/>
+</archimate:DataObject>

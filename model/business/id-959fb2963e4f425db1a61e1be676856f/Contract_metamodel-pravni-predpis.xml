@@ -1,0 +1,9 @@
+<archimate:Contract
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Právní předpis"
+    id="metamodel-pravni-predpis"
+    documentation="Jeden právní předpis. Je zároveň stereotypem s danou strukturou autributů.">
+  <properties
+      key="Stereotype"
+      value="Právní předpis"/>
+</archimate:Contract>

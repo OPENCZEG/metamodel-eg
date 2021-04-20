@@ -1,0 +1,9 @@
+<archimate:Capability
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Schopnost"
+    id="metamodel-schopnost"
+    documentation="Komplexní schopnost, zejména u schopností úřadu. Znamená společnou schopnost v úřadě, která se vykonává jednotně napříč celým úřadem a má i jednotné metodiky a jednotný rámec, ať už se dotýká jakékoliv agendy (v agendách může být pochopitelně parametricky přizpůsobena). Schopnost lze na byznysové vrstvě nejlépe rozpadnout na elementy typu [Služba] a [Proces], důležité jsou také [Role] zejména uvnitř úřadu. Na aplikační vrstvě se nesmí zapomínat zejména na [Informační systém veřejné správy] a [Informační systém], díky kterým můžeme schopnost realizovat. Schopnost plyne z nějakého byznysového prvku, a tedy zejména z typů [Povinnost].">
+  <properties
+      key="Určuje"
+      value="mapa schopností úřadu"/>
+</archimate:Capability>

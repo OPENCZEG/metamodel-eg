@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="má povinnost"
+    id="metamodel-subjekt-ma-povinnost"
+    documentation="Subjekt má obecně definovanou povinnost">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_metamodel-subjekt.xml#metamodel-subjekt"/>
+  <target
+      xsi:type="archimate:BusinessObject"
+      href="BusinessObject_metamodel-povinnost.xml#metamodel-povinnost"/>
+</archimate:AssociationRelationship>

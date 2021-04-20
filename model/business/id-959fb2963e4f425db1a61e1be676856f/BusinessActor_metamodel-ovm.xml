@@ -1,0 +1,12 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Orgán veřejné moci"
+    id="metamodel-ovm"
+    documentation="Subjekt, který je orgánem veřejné moci. Definuje se proto, že díky jeho OVMství má nějaké role, povinnosti a práva.">
+  <properties
+      key="Stereotype"
+      value="OVM"/>
+  <properties
+      key="Určuje"
+      value="ohlášení v katalogu OVM"/>
+</archimate:BusinessActor>

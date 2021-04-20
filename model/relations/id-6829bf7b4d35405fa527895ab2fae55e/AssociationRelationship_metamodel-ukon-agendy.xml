@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="určuje úkon"
+    id="metamodel-ukon-agendy"
+    documentation="Reprezentuje, že daná agenda určuje digitální nebo obecný úkon. Úkon je součástí agendy.">
+  <source
+      xsi:type="archimate:BusinessFunction"
+      href="BusinessFunction_metamodel-agenda.xml#metamodel-agenda"/>
+  <target
+      xsi:type="archimate:BusinessService"
+      href="BusinessService_metamodel-ukon.xml#metamodel-ukon"/>
+</archimate:AssociationRelationship>

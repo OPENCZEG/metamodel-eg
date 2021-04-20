@@ -1,0 +1,5 @@
+<archimate:BusinessService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Služba"
+    id="metamodel-sluzba"
+    documentation="Služba z byznysového pohledu"/>

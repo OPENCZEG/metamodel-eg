@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="VYDÁVÁ"
+    id="METAMODEL-VYDAVA-VNITRNI-PREDPIS"
+    documentation="Reprezentuje, že někdo vydává svůj závazný vnitřní předpis.">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_metamodel-ovm.xml#metamodel-ovm"/>
+  <target
+      xsi:type="archimate:Contract"
+      href="Contract_metamodel-vnitrni-predpis.xml#metamodel-vnitrni-predpis"/>
+</archimate:AssociationRelationship>

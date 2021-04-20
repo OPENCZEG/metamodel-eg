@@ -1,0 +1,13 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="obsahuje proces"
+    id="metamodel-schopnost___metamodel-proces"
+    documentation="Schopnost lze brát jako skupinu byznys funkcí, služeb či procesů a na stratrgické vrstvě architektury s přesahem na procesy zejména architektonické a řídící se takto dá zakreslit vazba.">
+  <source
+      xsi:type="archimate:Capability"
+      href="Capability_metamodel-schopnost.xml#metamodel-schopnost"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_metamodel-proces.xml#metamodel-proces"/>
+</archimate:AssociationRelationship>

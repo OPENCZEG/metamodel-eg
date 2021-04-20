@@ -1,0 +1,12 @@
+<archimate:Contract
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Ustanovení právního předpisu"
+    id="metamodel-ustanoveni"
+    documentation="Konkrétní ustanovení jednoho právního předpisu. Je zároveň stereotypem s určitými povinnými atributy, jako je odkaz na předpis a odkaz na daný fragment právního předpisu.">
+  <properties
+      key="Stereotype"
+      value="Ustanovení právního předpisu"/>
+  <properties
+      key="Určuje"
+      value="daný právní předpis"/>
+</archimate:Contract>

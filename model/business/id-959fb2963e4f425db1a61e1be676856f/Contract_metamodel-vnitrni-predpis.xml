@@ -1,0 +1,12 @@
+<archimate:Contract
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Vnitřní předpis"
+    id="metamodel-vnitrni-predpis"
+    documentation="Vnitřní závazný předpis upravující nějakou oblast. Často se využívá jako element pro úpravu [Schopnost] a nebo agendové konání. Je závazným předpisem pro daného vydavatele, či i pro jeho podřízené či řízené organizace.">
+  <properties
+      key="Stereotype"
+      value="Vnitřní předpis"/>
+  <properties
+      key="Určuje"
+      value="Vydavatel předpisu"/>
+</archimate:Contract>

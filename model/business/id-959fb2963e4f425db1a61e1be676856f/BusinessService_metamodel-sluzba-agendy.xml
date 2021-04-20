@@ -1,0 +1,12 @@
+<archimate:BusinessService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Služba veřejné správy"
+    id="metamodel-sluzba-agendy"
+    documentation="Služba veřejné správy, která je ohlášená v RPP v rámci objektu [agenda]. Má svého poskytovatele v rámci agendy. Služba se uvnitř úřadu rozpadá na objekty [proces] pro její výkon a [úkon] pro zaznamenání formálního úkonu v dané agendě. Nezaměňovat za objekt [agendová činnost].">
+  <properties
+      key="Stereotype"
+      value="Služba"/>
+  <properties
+      key="Určuje"
+      value="ohlášení v katalogu služeb v RPP"/>
+</archimate:BusinessService>

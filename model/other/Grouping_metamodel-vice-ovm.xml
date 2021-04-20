@@ -1,0 +1,12 @@
+<archimate:Grouping
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Skupina orgánů veřejné moci"
+    id="metamodel-vice-ovm"
+    documentation="Definování skupiny orgánů veřejné moci, má odlišné atributy, než je jeden OVM, nicméně platí to samé, něco dělají a mají nějaké role a nějaké povinnosti.">
+  <properties
+      key="Stereotype"
+      value="Skupina OVM"/>
+  <properties
+      key="Určuje"
+      value="ohlášení v katalogu OVM v RPP"/>
+</archimate:Grouping>
